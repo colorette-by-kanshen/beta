@@ -3,7 +3,7 @@ head {
     width: 100%;
 }
 
-head > #logo {
+#logo {
     background-color: #0F0F0F;
     justify-content: center;
     height: 65px;
