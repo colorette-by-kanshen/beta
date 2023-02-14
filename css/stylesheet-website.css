@@ -3,8 +3,15 @@ head {
     width: 100%;
 }
 
+div#logo-image {
+    display: grid;
+}
+
 img#logo {
-    background-color: #0F0F0F;
-    justify-content: center;
+    aspect-ratio: auto;
     height: 65px;
+    background-color: black;
+    display: flex;
+    align-items: flex-start;
+    justify-self: center;
 }
