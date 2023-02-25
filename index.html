@@ -8,4 +8,12 @@
             </div>
         </header>
     </head>
+    <body>
+        <div id="color-selector">
+            <form>
+                <input type="text" id="hex-input" name="hex-input" pattern="[a-fA-F0-9]{6}" required maxlength="6" minlength="6" placeholder="0F0F0F">
+                <input type="submit" value="GENERATE" onclick="changeTheme()">
+            </form>
+        </div>
+    </body>
 </html>
