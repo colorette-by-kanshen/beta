@@ -51,6 +51,7 @@ input[type="button"] {
     border: none;
     font-size: 14px;
     text-align: center;
+    border: 1px solid #F0F0F0;
 }
 
 input[type="text"] {
