@@ -7,7 +7,7 @@ function changeTheme() {
     formField.style.backgroundColor = "#" + input;
     button.style.backgroundColor = "#" + input;
     logo.style.backgroundColor = "#" + input;
-    updateLogoColor;
+    updateLogoColor();
 
 }
 
@@ -23,8 +23,10 @@ function updateLogoColor() {
   if (isLight) {
     logo.src = "img/logo-black.png";
     header.style.backgroundColor = "#000000";
+    formField.style.color = "#000000"
   } else {
     logo.src = "img/logo-white.png";
     header.style.backgroundColor = "#FFFFFF";
+    formField.style.color = "#FFFFFF"
   }
 }
