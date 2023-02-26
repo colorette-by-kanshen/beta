@@ -16,6 +16,7 @@ function updateLogoColor() {
   var header = document.querySelector("header");
   var computedStyle = getComputedStyle(logo);
   var backgroundColor = computedStyle.backgroundColor;
+  var formField = document.getElementById("hex-input");
   
   // extract red, green, and blue values from background color
   var rgbValues = backgroundColor.match(/\d+/g).map(Number);
