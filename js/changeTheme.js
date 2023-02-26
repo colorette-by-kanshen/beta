@@ -16,14 +16,20 @@ function updateLogoColor() {
   var header = document.querySelector("header");
   var computedStyle = getComputedStyle(logo);
   var backgroundColor = computedStyle.backgroundColor;
-  var colorValues = backgroundColor.match(/\d+/g).map(Number);
-  var isLight = colorValues.every(function(value) {
-    return value >= 150;
-  });
-  if (isLight) {
+  
+  // extract red, green, and blue values from background color
+  var rgbValues = backgroundColor.match(/\d+/g).map(Number);
+  var redValue = rgbValues[0];
+  var greenValue = rgbValues[1];
+  var blueValue = rgbValues[2];
+
+  // test if all color channels are at least 150
+  if (redValue >= 150 && greenValue >= 150 && blueValue >= 150) {
+    // set logo to black version and header background to black
     logo.src = "img/logo-black.png";
     header.style.backgroundColor = "#000000";
   } else {
+    // set logo to white version and header background to white
     logo.src = "img/logo-white.png";
     header.style.backgroundColor = "#FFFFFF";
   }
