@@ -12,6 +12,7 @@ function changeTheme() {
 
 }
 
+  var urlParams = new URLSearchParams(window.location.search);
   var color = urlParams.get("color");
   if (color) {
   var formField = document.getElementById("hex-input");
