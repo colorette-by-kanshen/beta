@@ -1,12 +1,13 @@
 function changeTheme() {
-    var input = document.getElementById("hex-input").value;
+    var urlParams = new URLSearchParams(window.location.search);
+    var color = urlParams.get("color");
     var formField = document.getElementById("hex-input");
     var button = document.querySelector("form");
     var logo = document.getElementById("logo")
   
-    formField.style.backgroundColor = "#" + input;
-    button.style.backgroundColor = "#" + input;
-    logo.style.backgroundColor = "#" + input;
+    formField.style.backgroundColor = "#" + color;
+    button.style.backgroundColor = "#" + color;
+    logo.style.backgroundColor = "#" + color;
     updateLogoColor();
 
 }
