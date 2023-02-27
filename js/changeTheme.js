@@ -12,7 +12,7 @@ function changeTheme() {
 
 }
 
-if (color) {
+function updateLogoColor() {
   var formField = document.getElementById("hex-input");
   var button = document.querySelector("button");
   var logo = document.getElementById("logo");
