@@ -1,28 +1,33 @@
 function changeTheme() {
-    var input = document.getElementById("hex-input").value;
+    var urlParams = new URLSearchParams(window.location.search);
+    var color = urlParams.get("color");
     var formField = document.getElementById("hex-input");
     var button = document.querySelector("form");
     var logo = document.getElementById("logo")
   
-    formField.style.backgroundColor = "#" + input;
-    button.style.backgroundColor = "#" + input;
-    logo.style.backgroundColor = "#" + input;
+    formField.style.backgroundColor = "#" + color;
+    button.style.backgroundColor = "#" + color;
+    logo.style.backgroundColor = "#" + color;
     updateLogoColor();
 
 }
 
-function updateLogoColor() {
+  var urlParams = new URLSearchParams(window.location.search);
+  var color = urlParams.get("color");
+  if (color) {
+  var formField = document.getElementById("hex-input");
+  var button = document.querySelector("button");
   var logo = document.getElementById("logo");
   var header = document.querySelector("header");
-  var computedStyle = getComputedStyle(logo);
-  var backgroundColor = computedStyle.backgroundColor;
-  var formField = document.getElementById("hex-input");
-  
-  // extract red, green, and blue values from background color
-  var rgbValues = backgroundColor.match(/\d+/g).map(Number);
-  var redValue = rgbValues[0];
-  var greenValue = rgbValues[1];
-  var blueValue = rgbValues[2];
+
+  formField.value = color;
+  formField.style.background = "#" + color;
+  button.style.background = "#" + color;
+  logo.style.background = "#" + color;
+
+  var r = parseInt(color.substring(0,2), 16);
+  var g = parseInt(color.substring(2,4), 16);
+  var b = parseInt(color.substring(4,6), 16);
 
   // test if all color channels are at least 150
   if (redValue >= 150 && greenValue >= 150 && blueValue >= 150) {

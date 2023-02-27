@@ -4,6 +4,9 @@
         <link href="/css/stylesheet.css" rel="stylesheet">
         <link rel="preload" href="img/logo-black.png" as="image">
         <link rel="preload" href="img/logo-white.png" as="image">
+        <script>
+            window.addEventListener('load', checkColor);
+        </script>
         <header>
             <div id="logo-image">
                 <img src="img/logo-white.png" id="logo">
@@ -11,13 +14,18 @@
         </header>
         <scripts>
             <script src="/js/changeTheme.js"></script>
+            <script src="/js/setColor.js"></script>
+            <script src="/js/checkColor.js"></script>
+            <script>
+                window.addEventListener('load', checkColor);
+            </script>
         </scripts>
         </head>
     <body>
         <div id="color-selector">
             <form>
                 <input type="text" id="hex-input" name="hex-input" pattern="[a-fA-F0-9]{6}" required maxlength="6" minlength="6" placeholder="0F0F0F">
-                <input type="button" value="GENERATE" onclick="changeTheme()">
+                <input type="button" value="GENERATE" onclick="setColor()">
             </form>
         </div>
     </body>
