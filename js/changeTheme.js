@@ -12,7 +12,8 @@ function changeTheme() {
 
 }
 
-if (color) {
+  var color = urlParams.get("color");
+  if (color) {
   var formField = document.getElementById("hex-input");
   var button = document.querySelector("button");
   var logo = document.getElementById("logo");
