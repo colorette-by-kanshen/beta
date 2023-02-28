@@ -17,13 +17,11 @@ function updateLogoColor() {
   var color = urlParams.get("color");
   if (color) {
     var formField = document.getElementById("hex-input");
-    var button = document.querySelector("button");
     var logo = document.getElementById("logo");
     var header = document.querySelector("header");
 
     formField.value = color;
     formField.style.background = "#" + color;
-    button.style.background = "#" + color;
     logo.style.background = "#" + color;
 
     var r = parseInt(color.substring(0, 2), 16);
@@ -31,7 +29,7 @@ function updateLogoColor() {
     var b = parseInt(color.substring(4, 6), 16);
 
     // test if all color channels are at least 150
-    if (redValue >= 150 && greenValue >= 150 && blueValue >= 150) {
+    if (r >= 150 && g >= 150 && b >= 150) {
       // set logo to black version and header background to black
       logo.src = "img/logo-black.png";
       header.style.backgroundColor = "#000000";
