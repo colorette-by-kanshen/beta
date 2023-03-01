@@ -13,6 +13,7 @@
             <script src="/js/changeTheme.js"></script>
             <script src="/js/setColor.js"></script>
             <script src="/js/checkColor.js"></script>
+            <script src="/js/formCheck.js"></script>
             <script>
                 window.addEventListener('load', checkColor);
             </script>
@@ -21,8 +22,8 @@
     <body>
         <div id="color-selector">
             <form>
-                <input type="text" id="hex-input" name="hex-input" pattern="[a-fA-F0-9]{6}" required maxlength="6" minlength="6" placeholder="0F0F0F">
-                <input type="button" value="GENERATE" onclick="setColor()">
+                <input type="text" id="hex-input" name="color" pattern="[a-fA-F0-9]{6}" required maxlength="6" minlength="6" placeholder="0F0F0F">
+                <input type="button" value="GENERATE" onclick="formCheck()">
             </form>
         </div>
     </body>
