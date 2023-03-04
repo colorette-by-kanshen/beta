@@ -3,6 +3,6 @@ function checkColor() {
   const color = urlParams.get('color');
   if (color) {
     document.getElementById('hex-input').value = color;
-    changeTheme();
+    changeTheme(color);
   }
 }
