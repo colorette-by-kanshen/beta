@@ -93,7 +93,7 @@ function generatePalette(defColor, defBrightness) {
     // Calculate the color2
     let color2;
     if (defBrightness === 2) {
-        color0 = {
+        color2 = {
             red: Math.round(redRGB),
             green: Math.round(greenRGB),
             blue: Math.round(blueRGB)
@@ -173,7 +173,7 @@ function generatePalette(defColor, defBrightness) {
     // Calculate the color4
     let color4;
     if (defBrightness === 4) {
-        color0 = {
+        color4 = {
             red: Math.round(redRGB),
             green: Math.round(greenRGB),
             blue: Math.round(blueRGB)
