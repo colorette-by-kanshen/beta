@@ -116,17 +116,17 @@ function generatePalette(defColor, defBrightness) {
     }
     if (redRGB >= 16) {
         if (defBrightness < 2) {
-            color2.red = Math.round((2 - defBrightness) * (255 / (11 - defBrightness)))
+            color2.red = color1.red + Math.round((2 - defBrightness) * (255 / (11 - defBrightness)))
         }
     }
     if (greenRGB >= 16) {
         if (defBrightness < 2) {
-            color2.green = Math.round((2 - defBrightness) * (255 / (11 - defBrightness)))
+            color2.green = color1.green + Math.round((2 - defBrightness) * (255 / (11 - defBrightness)))
         }
     }
     if (blueRGB >= 16) {
         if (defBrightness < 2) {
-            color2.blue = Math.round((2 - defBrightness) * (255 / (11 - defBrightness)))
+            color2.blue = color1.blue + Math.round((2 - defBrightness) * (255 / (11 - defBrightness)))
         }
     }
 
@@ -156,17 +156,17 @@ function generatePalette(defColor, defBrightness) {
     }
     if (redRGB >= 16) {
         if (defBrightness < 3) {
-            color3.red = Math.round((3 - defBrightness) * (255 / (11 - defBrightness)))
+            color3.red = color1.red + Math.round((3 - defBrightness) * (255 / (11 - defBrightness)))
         }
     }
     if (greenRGB >= 16) {
         if (defBrightness < 3) {
-            color3.green = Math.round((3 - defBrightness) * (255 / (11 - defBrightness)))
+            color3.green = color1.green + Math.round((3 - defBrightness) * (255 / (11 - defBrightness)))
         }
     }
     if (blueRGB >= 16) {
         if (defBrightness < 3) {
-            color3.blue = Math.round((3 - defBrightness) * (255 / (11 - defBrightness)))
+            color3.blue = color1.blue + Math.round((3 - defBrightness) * (255 / (11 - defBrightness)))
         }
     }
 
@@ -196,17 +196,17 @@ function generatePalette(defColor, defBrightness) {
     }
     if (redRGB >= 16) {
         if (defBrightness < 4) {
-            color4.red = Math.round((4 - defBrightness) * (255 / (11 - defBrightness)))
+            color4.red = color1.red + Math.round((4 - defBrightness) * (255 / (11 - defBrightness)))
         }
     }
     if (greenRGB >= 16) {
         if (defBrightness < 4) {
-            color4.green = Math.round((4 - defBrightness) * (255 / (11 - defBrightness)))
+            color4.green = color1.green + Math.round((4 - defBrightness) * (255 / (11 - defBrightness)))
         }
     }
     if (blueRGB >= 16) {
         if (defBrightness < 4) {
-            color4.blue = Math.round((4 - defBrightness) * (255 / (11 - defBrightness)))
+            color4.blue = color1.blue + Math.round((4 - defBrightness) * (255 / (11 - defBrightness)))
         }
     }
 
@@ -236,17 +236,17 @@ function generatePalette(defColor, defBrightness) {
     }
     if (redRGB >= 16) {
         if (defBrightness < 5) {
-            color5.red = Math.round((5 - defBrightness) * (255 / (11 - defBrightness)))
+            color5.red = color1.red + Math.round((5 - defBrightness) * (255 / (11 - defBrightness)))
         }
     }
     if (greenRGB >= 16) {
         if (defBrightness < 5) {
-            color5.green = Math.round((5 - defBrightness) * (255 / (11 - defBrightness)))
+            color5.green = color1.green + Math.round((5 - defBrightness) * (255 / (11 - defBrightness)))
         }
     }
     if (blueRGB >= 16) {
         if (defBrightness < 5) {
-            color5.blue = Math.round((5 - defBrightness) * (255 / (11 - defBrightness)))
+            color5.blue = color1.blue + Math.round((5 - defBrightness) * (255 / (11 - defBrightness)))
         }
     }
 
@@ -276,17 +276,17 @@ function generatePalette(defColor, defBrightness) {
     }
     if (redRGB >= 16) {
         if (defBrightness < 6) {
-            color6.red = Math.round((6 - defBrightness) * (255 / (11 - defBrightness)))
+            color6.red = color1.red + Math.round((6 - defBrightness) * (255 / (11 - defBrightness)))
         }
     }
     if (greenRGB >= 16) {
         if (defBrightness < 6) {
-            color6.green = Math.round((6 - defBrightness) * (255 / (11 - defBrightness)))
+            color6.green = color1.green + Math.round((6 - defBrightness) * (255 / (11 - defBrightness)))
         }
     }
     if (blueRGB >= 16) {
         if (defBrightness < 6) {
-            color6.blue = Math.round((6 - defBrightness) * (255 / (11 - defBrightness)))
+            color6.blue = color1.blue + Math.round((6 - defBrightness) * (255 / (11 - defBrightness)))
         }
     }
 
@@ -316,17 +316,17 @@ function generatePalette(defColor, defBrightness) {
     }
     if (redRGB >= 16) {
         if (defBrightness < 7) {
-            color7.red = Math.round((7 - defBrightness) * (255 / (11 - defBrightness)))
+            color7.red = color1.red + Math.round((7 - defBrightness) * (255 / (11 - defBrightness)))
         }
     }
     if (greenRGB >= 16) {
         if (defBrightness < 7) {
-            color7.green = Math.round((7 - defBrightness) * (255 / (11 - defBrightness)))
+            color7.green = color1.green + Math.round((7 - defBrightness) * (255 / (11 - defBrightness)))
         }
     }
     if (blueRGB >= 16) {
         if (defBrightness < 7) {
-            color7.blue = Math.round((7 - defBrightness) * (255 / (11 - defBrightness)))
+            color7.blue = color1.blue + Math.round((7 - defBrightness) * (255 / (11 - defBrightness)))
         }
     }
 
@@ -356,17 +356,17 @@ function generatePalette(defColor, defBrightness) {
     }
     if (redRGB >= 16) {
         if (defBrightness < 8) {
-            color8.red = Math.round((8 - defBrightness) * (255 / (11 - defBrightness)))
+            color8.red = color1.red + Math.round((8 - defBrightness) * (255 / (11 - defBrightness)))
         }
     }
     if (greenRGB >= 16) {
         if (defBrightness < 8) {
-            color8.green = Math.round((8 - defBrightness) * (255 / (11 - defBrightness)))
+            color8.green = color1.green + Math.round((8 - defBrightness) * (255 / (11 - defBrightness)))
         }
     }
     if (blueRGB >= 16) {
         if (defBrightness < 8) {
-            color8.blue = Math.round((8 - defBrightness) * (255 / (11 - defBrightness)))
+            color8.blue = color1.blue + Math.round((8 - defBrightness) * (255 / (11 - defBrightness)))
         }
     }
 
@@ -396,17 +396,17 @@ function generatePalette(defColor, defBrightness) {
     }
     if (redRGB >= 16) {
         if (defBrightness < 9) {
-            color9.red = Math.round((9 - defBrightness) * (255 / (11 - defBrightness)))
+            color9.red = color1.red + Math.round((9 - defBrightness) * (255 / (11 - defBrightness)))
         }
     }
     if (greenRGB >= 16) {
         if (defBrightness < 9) {
-            color9.green = Math.round((9 - defBrightness) * (255 / (11 - defBrightness)))
+            color9.green = color1.green + Math.round((9 - defBrightness) * (255 / (11 - defBrightness)))
         }
     }
     if (blueRGB >= 16) {
         if (defBrightness < 9) {
-            color9.blue = Math.round((9 - defBrightness) * (255 / (11 - defBrightness)))
+            color9.blue = color1.blue + Math.round((9 - defBrightness) * (255 / (11 - defBrightness)))
         }
     }
 
@@ -436,17 +436,17 @@ function generatePalette(defColor, defBrightness) {
     }
     if (redRGB >= 16) {
         if (defBrightness < 10) {
-            color10.red = Math.round((10 - defBrightness) * (255 / (11 - defBrightness)))
+            color10.red = color1.red + Math.round((10 - defBrightness) * (255 / (11 - defBrightness)))
         }
     }
     if (greenRGB >= 16) {
         if (defBrightness < 10) {
-            color10.green = Math.round((10 - defBrightness) * (255 / (11 - defBrightness)))
+            color10.green = color1.green + Math.round((10 - defBrightness) * (255 / (11 - defBrightness)))
         }
     }
     if (blueRGB >= 16) {
         if (defBrightness < 10) {
-            color10.blue = Math.round((10 - defBrightness) * (255 / (11 - defBrightness)))
+            color10.blue = color1.blue + Math.round((10 - defBrightness) * (255 / (11 - defBrightness)))
         }
     }
 
