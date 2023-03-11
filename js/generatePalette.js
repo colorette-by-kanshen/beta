@@ -462,9 +462,9 @@ function compilePalette(color0, color1, color2, color3, color4, color5, color6, 
     const color0HEX = red0HEX + green0HEX + blue0HEX;
 
     // Get HEX Code for color1
-    const red1HEX = redRGB.toString(16).padStart(2, '0');
-    const green1HEX = greenRGB.toString(16).padStart(2, '0');
-    const blue1HEX = blueRGB.toString(16).padStart(2, '0');
+    const red1HEX = color1.red.toString(16).padStart(2, '0');
+    const green1HEX = color1.green.toString(16).padStart(2, '0');
+    const blue1HEX = color1.blue.toString(16).padStart(2, '0');
     const color1HEX = red1HEX + green1HEX + blue1HEX;
 
     // Get HEX Code for color2
