@@ -24,15 +24,6 @@ function generatePalette(defColor, defBrightness) {
             blue: Math.round(Math.round(blueRGB / defBrightness))
         };
     }
-    if (color1.red > 255) {
-        color1.red = 255;
-    }
-    if (color1.green > 255) {
-        color1.green = 255;
-    }
-    if (color1.blue > 255) {
-        color1.blue = 255;
-    }
     if (redRGB >= 16) {
         if (defBrightness < 1) {
             color1.red = Math.round((1 - defBrightness) * (255 / (11 - defBrightness)))
@@ -451,6 +442,228 @@ function generatePalette(defColor, defBrightness) {
     }
 
     console.log(color0, color1, color2, color3, color4, color5, color6, color7, color8, color9, color10);
+    validateColors(color0, color1, color2, color3, color4, color5, color6, color7, color8, color9, color10)
+}
+
+function validateColors(color0, color1, color2, color3, color4, color5, color6, color7, color8, color9, color10) {
+    // Validate color0
+    if (color0.red > 255) {
+        color0.red = 255;
+    }
+    else if (color0.red < 0) {
+        color0.red = 0
+    }
+    if (color0.green > 255) {
+        color0.green = 255;
+    }
+    else if (color0.green < 0) {
+        color0.green = 0
+    }
+    if (color0.blue > 255) {
+        color0.blue = 255;
+    }
+    else if (color0.blue < 0) {
+        color0.blue = 0
+    }
+
+    // Validate color1
+    if (color1.red > 255) {
+        color1.red = 255;
+    }
+    else if (color1.red < 0) {
+        color1.red = 0
+    }
+    if (color1.green > 255) {
+        color1.green = 255;
+    }
+    else if (color1.green < 0) {
+        color1.green = 0
+    }
+    if (color1.blue > 255) {
+        color1.blue = 255;
+    }
+    else if (color1.blue < 0) {
+        color1.blue = 0
+    }
+
+    // Validate color2
+    if (color2.red > 255) {
+        color2.red = 255;
+    }
+    else if (color2.red < 0) {
+        color2.red = 0
+    }
+    if (color2.green > 255) {
+        color2.green = 255;
+    }
+    else if (color2.green < 0) {
+        color2.green = 0
+    }
+    if (color2.blue > 255) {
+        color2.blue = 255;
+    }
+    else if (color2.blue < 0) {
+        color2.blue = 0
+    }
+
+    // Validate color3
+    if (color3.red > 255) {
+        color3.red = 255;
+    }
+    else if (color3.red < 0) {
+        color3.red = 0
+    }
+    if (color3.green > 255) {
+        color3.green = 255;
+    }
+    else if (color3.green < 0) {
+        color3.green = 0
+    }
+    if (color3.blue > 255) {
+        color3.blue = 255;
+    }
+    else if (color3.blue < 0) {
+        color3.blue = 0
+    }
+        // Validate color4
+    if (color4.red > 255) {
+        color4.red = 255;
+    }
+    else if (color4.red < 0) {
+        color4.red = 0
+    }
+    if (color4.green > 255) {
+        color4.green = 255;
+    }
+    else if (color4.green < 0) {
+        color4.green = 0
+    }
+    if (color4.blue > 255) {
+        color4.blue = 255;
+    }
+    else if (color4.blue < 0) {
+        color4.blue = 0
+    }
+
+    // Validate color5
+    if (color5.red > 255) {
+        color5.red = 255;
+    }
+    else if (color5.red < 0) {
+        color5.red = 0
+    }
+    if (color5.green > 255) {
+        color5.green = 255;
+    }
+    else if (color5.green < 0) {
+        color5.green = 0
+    }
+    if (color5.blue > 255) {
+        color5.blue = 255;
+    }
+    else if (color5.blue < 0) {
+        color5.blue = 0
+    }
+
+    // Validate color6
+    if (color6.red > 255) {
+        color6.red = 255;
+    }
+    else if (color6.red < 0) {
+        color6.red = 0
+    }
+    if (color6.green > 255) {
+        color6.green = 255;
+    }
+    else if (color6.green < 0) {
+        color6.green = 0
+    }
+    if (color6.blue > 255) {
+        color6.blue = 255;
+    }
+    else if (color6.blue < 0) {
+        color6.blue = 0
+    }
+
+    // Validate color7
+    if (color7.red > 255) {
+        color7.red = 255;
+    }
+    else if (color7.red < 0) {
+        color7.red = 0
+    }
+    if (color7.green > 255) {
+        color7.green = 255;
+    }
+    else if (color7.green < 0) {
+        color7.green = 0
+    }
+    if (color7.blue > 255) {
+        color7.blue = 255;
+    }
+    else if (color7.blue < 0) {
+        color7.blue = 0
+    }
+
+    // Validate color8
+    if (color8.red > 255) {
+        color8.red = 255;
+    }
+    else if (color8.red < 0) {
+        color8.red = 0
+    }
+    if (color8.green > 255) {
+        color8.green = 255;
+    }
+    else if (color8.green < 0) {
+        color8.green = 0
+    }
+    if (color8.blue > 255) {
+        color8.blue = 255;
+    }
+    else if (color8.blue < 0) {
+        color8.blue = 0
+    }
+
+    // Validate color9
+    if (color9.red > 255) {
+        color9.red = 255;
+    }
+    else if (color9.red < 0) {
+        color9.red = 0
+    }
+    if (color9.green > 255) {
+        color9.green = 255;
+    }
+    else if (color9.green < 0) {
+        color9.green = 0
+    }
+    if (color9.blue > 255) {
+        color9.blue = 255;
+    }
+    else if (color9.blue < 0) {
+        color9.blue = 0
+    }
+
+    // Validate color10
+    if (color10.red > 255) {
+        color10.red = 255;
+    }
+    else if (color10.red < 0) {
+        color10.red = 0
+    }
+    if (color10.green > 255) {
+        color10.green = 255;
+    }
+    else if (color10.green < 0) {
+        color10.green = 0
+    }
+    if (color10.blue > 255) {
+        color10.blue = 255;
+    }
+    else if (color10.blue < 0) {
+        color10.blue = 0
+    }
     compilePalette(color0, color1, color2, color3, color4, color5, color6, color7, color8, color9, color10)
 }
 
