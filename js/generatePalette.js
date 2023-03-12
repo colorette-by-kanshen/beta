@@ -19,9 +19,9 @@ function generatePalette(defColor, defBrightness) {
         };
     } else {
         color0 = {
-            red: Math.round(redRGB + Math.round((0 - defBrightness) * (255 / 10))),
-            green: Math.round(greenRGB + Math.round((0 - defBrightness) * (255 / 10))),
-            blue: Math.round(blueRGB + Math.round((0 - defBrightness) * (255 / 10)))
+            red: Math.round(redRGB + Math.round((0 - defBrightness) * (255 / 9))),
+            green: Math.round(greenRGB + Math.round((0 - defBrightness) * (255 / 9))),
+            blue: Math.round(blueRGB + Math.round((0 - defBrightness) * (255 / 9)))
         }
     }
 
@@ -35,9 +35,9 @@ function generatePalette(defColor, defBrightness) {
         };
     } else {
         color1 = {
-            red: Math.round(redRGB + Math.round((1 - defBrightness) * (255 / 10))),
-            green: Math.round(greenRGB + Math.round((1 - defBrightness) * (255 / 10))),
-            blue: Math.round(blueRGB + Math.round((1 - defBrightness) * (255 / 10)))
+            red: Math.round(redRGB + Math.round((1 - defBrightness) * (255 / 9))),
+            green: Math.round(greenRGB + Math.round((1 - defBrightness) * (255 / 9))),
+            blue: Math.round(blueRGB + Math.round((1 - defBrightness) * (255 / 9)))
         }
     }
 
@@ -51,9 +51,9 @@ function generatePalette(defColor, defBrightness) {
         };
     } else {
         color2 = {
-            red: Math.round(redRGB + Math.round((2 - defBrightness) * (255 / 10))),
-            green: Math.round(greenRGB + Math.round((2 - defBrightness) * (255 / 10))),
-            blue: Math.round(blueRGB + Math.round((2 - defBrightness) * (255 / 10)))
+            red: Math.round(redRGB + Math.round((2 - defBrightness) * (255 / 9))),
+            green: Math.round(greenRGB + Math.round((2 - defBrightness) * (255 / 9))),
+            blue: Math.round(blueRGB + Math.round((2 - defBrightness) * (255 / 9)))
         }
     }
 
@@ -67,9 +67,9 @@ function generatePalette(defColor, defBrightness) {
         };
     } else {
         color3 = {
-            red: Math.round(redRGB + Math.round((3 - defBrightness) * (255 / 10))),
-            green: Math.round(greenRGB + Math.round((3 - defBrightness) * (255 / 10))),
-            blue: Math.round(blueRGB + Math.round((3 - defBrightness) * (255 / 10)))
+            red: Math.round(redRGB + Math.round((3 - defBrightness) * (255 / 9))),
+            green: Math.round(greenRGB + Math.round((3 - defBrightness) * (255 / 9))),
+            blue: Math.round(blueRGB + Math.round((3 - defBrightness) * (255 / 9)))
         }
     }
 
@@ -83,9 +83,9 @@ function generatePalette(defColor, defBrightness) {
         };
     } else {
         color4 = {
-            red: Math.round(redRGB + Math.round((4 - defBrightness) * (255 / 10))),
-            green: Math.round(greenRGB + Math.round((4 - defBrightness) * (255 / 10))),
-            blue: Math.round(blueRGB + Math.round((4 - defBrightness) * (255 / 10)))
+            red: Math.round(redRGB + Math.round((4 - defBrightness) * (255 / 9))),
+            green: Math.round(greenRGB + Math.round((4 - defBrightness) * (255 / 9))),
+            blue: Math.round(blueRGB + Math.round((4 - defBrightness) * (255 / 9)))
         }
     }
 
@@ -99,9 +99,9 @@ function generatePalette(defColor, defBrightness) {
         };
     } else {
         color5 = {
-            red: Math.round(redRGB + Math.round((5 - defBrightness) * (255 / 10))),
-            green: Math.round(greenRGB + Math.round((5 - defBrightness) * (255 / 10))),
-            blue: Math.round(blueRGB + Math.round((5 - defBrightness) * (255 / 10)))
+            red: Math.round(redRGB + Math.round((5 - defBrightness) * (255 / 9))),
+            green: Math.round(greenRGB + Math.round((5 - defBrightness) * (255 / 9))),
+            blue: Math.round(blueRGB + Math.round((5 - defBrightness) * (255 / 9)))
         }
     }
 
@@ -115,9 +115,9 @@ function generatePalette(defColor, defBrightness) {
         };
     } else {
         color6 = {
-            red: Math.round(redRGB + Math.round((6 - defBrightness) * (255 / 10))),
-            green: Math.round(greenRGB + Math.round((6 - defBrightness) * (255 / 10))),
-            blue: Math.round(blueRGB + Math.round((6 - defBrightness) * (255 / 10)))
+            red: Math.round(redRGB + Math.round((6 - defBrightness) * (255 / 9))),
+            green: Math.round(greenRGB + Math.round((6 - defBrightness) * (255 / 9))),
+            blue: Math.round(blueRGB + Math.round((6 - defBrightness) * (255 / 9)))
         }
     }
 
@@ -131,9 +131,9 @@ function generatePalette(defColor, defBrightness) {
         };
     } else {
         color7 = {
-            red: Math.round(redRGB + Math.round((7 - defBrightness) * (255 / 10))),
-            green: Math.round(greenRGB + Math.round((7 - defBrightness) * (255 / 10))),
-            blue: Math.round(blueRGB + Math.round((7 - defBrightness) * (255 / 10)))
+            red: Math.round(redRGB + Math.round((7 - defBrightness) * (255 / 9))),
+            green: Math.round(greenRGB + Math.round((7 - defBrightness) * (255 / 9))),
+            blue: Math.round(blueRGB + Math.round((7 - defBrightness) * (255 / 9)))
         }
     }
 
@@ -147,9 +147,9 @@ function generatePalette(defColor, defBrightness) {
         };
     } else {
         color8 = {
-            red: Math.round(redRGB + Math.round((8 - defBrightness) * (255 / 10))),
-            green: Math.round(greenRGB + Math.round((8 - defBrightness) * (255 / 10))),
-            blue: Math.round(blueRGB + Math.round((8 - defBrightness) * (255 / 10)))
+            red: Math.round(redRGB + Math.round((8 - defBrightness) * (255 / 9))),
+            green: Math.round(greenRGB + Math.round((8 - defBrightness) * (255 / 9))),
+            blue: Math.round(blueRGB + Math.round((8 - defBrightness) * (255 / 9)))
         }
     }
 
@@ -163,9 +163,9 @@ function generatePalette(defColor, defBrightness) {
         };
     } else {
         color9 = {
-            red: Math.round(redRGB + Math.round((9 - defBrightness) * (255 / 10))),
-            green: Math.round(greenRGB + Math.round((9 - defBrightness) * (255 / 10))),
-            blue: Math.round(blueRGB + Math.round((9 - defBrightness) * (255 / 10)))
+            red: Math.round(redRGB + Math.round((9 - defBrightness) * (255 / 9))),
+            green: Math.round(greenRGB + Math.round((9 - defBrightness) * (255 / 9))),
+            blue: Math.round(blueRGB + Math.round((9 - defBrightness) * (255 / 9)))
         }
     }
 
@@ -179,9 +179,9 @@ function generatePalette(defColor, defBrightness) {
         };
     } else {
         color10 = {
-            red: Math.round(redRGB + Math.round((10 - defBrightness) * (255 / 10))),
-            green: Math.round(greenRGB + Math.round((10 - defBrightness) * (255 / 10))),
-            blue: Math.round(blueRGB + Math.round((10 - defBrightness) * (255 / 10)))
+            red: Math.round(redRGB + Math.round((10 - defBrightness) * (255 / 9))),
+            green: Math.round(greenRGB + Math.round((10 - defBrightness) * (255 / 9))),
+            blue: Math.round(blueRGB + Math.round((10 - defBrightness) * (255 / 9)))
         }
     }
 
