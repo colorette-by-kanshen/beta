@@ -186,10 +186,10 @@ function generatePalette(defColor, defBrightness) {
     }
 
     console.log(color0, color1, color2, color3, color4, color5, color6, color7, color8, color9, color10);
-    validateColors(color0, color1, color2, color3, color4, color5, color6, color7, color8, color9, color10)
+    validateColors(color0, color1, color2, color3, color4, color5, color6, color7, color8, color9, color10, defBrightness)
 }
 
-function validateColors(color0, color1, color2, color3, color4, color5, color6, color7, color8, color9, color10) {
+function validateColors(color0, color1, color2, color3, color4, color5, color6, color7, color8, color9, color10, defBrightness) {
     // Validate color0
     if (color0.red > 255) {
         color0.red = 255;
@@ -408,10 +408,10 @@ function validateColors(color0, color1, color2, color3, color4, color5, color6, 
     else if (color10.blue < 0) {
         color10.blue = 0
     }
-    compilePalette(color0, color1, color2, color3, color4, color5, color6, color7, color8, color9, color10)
+    compilePalette(color0, color1, color2, color3, color4, color5, color6, color7, color8, color9, color10, defBrightness)
 }
 
-function compilePalette(color0, color1, color2, color3, color4, color5, color6, color7, color8, color9, color10) {
+function compilePalette(color0, color1, color2, color3, color4, color5, color6, color7, color8, color9, color10, defBrightness) {
     // Get HEX Code for color0
     const red0HEX = color0.red.toString(16).padStart(2, '0');
     const green0HEX = color0.green.toString(16).padStart(2, '0');
@@ -479,10 +479,10 @@ function compilePalette(color0, color1, color2, color3, color4, color5, color6, 
     const color10HEX = red10HEX + green10HEX + blue10HEX;
 
     // Show The Palette Onto the Website
-    setPalette(color0HEX, color1HEX, color2HEX, color3HEX, color4HEX, color5HEX, color6HEX, color7HEX, color8HEX, color9HEX, color10HEX)
+    setPalette(color0HEX, color1HEX, color2HEX, color3HEX, color4HEX, color5HEX, color6HEX, color7HEX, color8HEX, color9HEX, color10HEX, defBrightness)
 }
 
-function setPalette(c0, c1, c2, c3, c4, c5, c6, c7, c8, c9, c10) {
+function setPalette(c0, c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, defBrightness) {
     // Set Function Constants
     const paletteBox0 = document.getElementById("color0");
     const paletteBox1 = document.getElementById("color1");
@@ -495,6 +495,8 @@ function setPalette(c0, c1, c2, c3, c4, c5, c6, c7, c8, c9, c10) {
     const paletteBox8 = document.getElementById("color8");
     const paletteBox9 = document.getElementById("color9");
     const paletteBox10 = document.getElementById("color10");
+    const defaultPaletteBox = document.getElementById(`color${defBrightness}`);
+    const defaultColorSPAN = defaultPaletteBox.querySelector(".hex")
 
     // Show The Palette Onto the Website
     paletteBox0.style.backgroundColor = "#" + c0;
@@ -508,5 +510,23 @@ function setPalette(c0, c1, c2, c3, c4, c5, c6, c7, c8, c9, c10) {
     paletteBox8.style.backgroundColor = "#" + c8;
     paletteBox9.style.backgroundColor = "#" + c9;
     paletteBox10.style.backgroundColor = "#" + c10;
+
+    // Insert color codes into the elements
+    paletteBox0.querySelector(".hex").textContent = "#" + c0;
+    paletteBox1.querySelector(".hex").textContent = "#" + c1;
+    paletteBox2.querySelector(".hex").textContent = "#" + c2;
+    paletteBox3.querySelector(".hex").textContent = "#" + c3;
+    paletteBox4.querySelector(".hex").textContent = "#" + c4;
+    paletteBox5.querySelector(".hex").textContent = "#" + c5;
+    paletteBox6.querySelector(".hex").textContent = "#" + c6;
+    paletteBox7.querySelector(".hex").textContent = "#" + c7;
+    paletteBox8.querySelector(".hex").textContent = "#" + c8;
+    paletteBox9.querySelector(".hex").textContent = "#" + c9;
+    paletteBox10.querySelector(".hex").textContent = "#" + c10;
+
+    // Add .default class to the default brightness
+    defaultPaletteBox.classList.add('default');
+    // Add text styling to default brightness box
+    defaultColorSPAN.style.color = "#" + window["c" + defBrightness];
 
 }

@@ -32,16 +32,19 @@ p {
     color: #F0F0F0;
 }
 
-p > strong {
+p>strong {
     font-family: Vegur;
     font-weight: bold;
     color: #F0F0F0;
 }
 
-a:link, a:visited, a:active {
+a:link,
+a:visited,
+a:active {
     color: white;
     text-decoration: none;
 }
+
 a:hover {
     text-decoration: underline;
 }
@@ -107,4 +110,82 @@ input[type="text"] {
     width: 9.0909090909%;
     border: 3px solid #F0F0F0;
     color: #F0F0F0;
+}
+
+div.maincolorpallettebox#color0>span.hex,
+div.maincolorpallettebox#color1>span.hex,
+div.maincolorpallettebox#color2>span.hex,
+div.maincolorpallettebox#color3>span.hex,
+div.maincolorpallettebox#color4>span.hex,
+div.maincolorpallettebox#color5>span.hex,
+div.maincolorpallettebox#color6>span.hex,
+div.maincolorpallettebox#color7>span.hex {
+    font-family: 'Vegur';
+    font-size: 12px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    color: #F0F0F0;
+}
+
+div.maincolorpallettebox#color8>span.hex,
+div.maincolorpallettebox#color9>span.hex,
+div.maincolorpallettebox#color10>span.hex {
+    font-family: 'Vegur';
+    font-size: 12px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    color: #0F0F0F;
+}
+
+div.maincolorpallettebox.default#color0>span.hex,
+div.maincolorpallettebox.default#color1>span.hex,
+div.maincolorpallettebox.default#color2>span.hex,
+div.maincolorpallettebox.default#color3>span.hex,
+div.maincolorpallettebox.default#color4>span.hex,
+div.maincolorpallettebox.default#color5>span.hex,
+div.maincolorpallettebox.default#color6>span.hex,
+div.maincolorpallettebox.default#color7>span.hex {
+    font-family: 'Vegur';
+    font-size: 12px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    background-color: #F0F0F0;
+}
+
+div.maincolorpallettebox.default#color8>span.hex,
+div.maincolorpallettebox.default#color9>span.hex,
+div.maincolorpallettebox.default#color10>span.hex {
+    font-family: 'Vegur';
+    font-size: 12px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+    background-color: #0F0F0F;
 }
