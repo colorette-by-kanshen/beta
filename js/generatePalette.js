@@ -526,7 +526,5 @@ function setPalette(c0, c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, defBrightness) 
 
     // Add .default class to the default brightness
     defaultPaletteBox.classList.add('default');
-    // Add text styling to default brightness box
-    defaultColorSPAN.style.color = "#" + window["c" + defBrightness];
 
 }
