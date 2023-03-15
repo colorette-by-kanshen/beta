@@ -123,6 +123,7 @@ div.maincolorpallettebox#color7>span.hex {
     font-family: 'Vegur';
     font-size: 12px;
     display: block;
+    margin: auto;
     width: fit-content;
     height: fit-content;
     color: #F0F0F0;
@@ -134,6 +135,7 @@ div.maincolorpallettebox#color10>span.hex {
     font-family: 'Vegur';
     font-size: 12px;
     display: block;
+    margin: auto;
     width: fit-content;
     height: fit-content;
     color: #0F0F0F;
@@ -151,6 +153,7 @@ div.maincolorpallettebox.default#color7>span.hex {
     font-weight: bold;
     font-size: 12px;
     display: block;
+    margin: auto;
     width: fit-content;
     height: fit-content;
 }
@@ -162,6 +165,7 @@ div.maincolorpallettebox.default#color10>span.hex {
     font-weight: bold;
     font-size: 12px;
     display: block;
+    margin: auto;
     width: fit-content;
     height: fit-content;
 }
