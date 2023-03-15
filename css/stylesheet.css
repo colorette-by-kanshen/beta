@@ -94,17 +94,17 @@ input[type="text"] {
     display: none;
     border: 3px solid #F0F0F0;
     border-radius: 10px;
-    max-width: 800px;
+    max-width: 100%;
     margin: 25px auto;
     justify-content: center;
     width: fit-content;
+    min-width: 90%;
 }
 
 .maincolorpallettebox {
     display: none;
-    width: 75px;
     height: 150px;
-    width: 75px;
+    width: 9.0909090909%;
     border: 3px solid #F0F0F0;
     color: #F0F0F0;
 }
