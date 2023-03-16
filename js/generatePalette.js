@@ -479,10 +479,10 @@ function compilePalette(color0, color1, color2, color3, color4, color5, color6, 
     const color10HEX = red10HEX + green10HEX + blue10HEX;
 
     // Show The Palette Onto the Website
-    setPalette(color0HEX, color1HEX, color2HEX, color3HEX, color4HEX, color5HEX, color6HEX, color7HEX, color8HEX, color9HEX, color10HEX, defBrightness)
+    setHEXPalette(color0HEX, color1HEX, color2HEX, color3HEX, color4HEX, color5HEX, color6HEX, color7HEX, color8HEX, color9HEX, color10HEX, defBrightness)
 }
 
-function setPalette(c0, c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, defBrightness) {
+function setHEXPalette(c0, c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, defBrightness) {
     // Set Function Constants
     const paletteBox0 = document.getElementById("color0");
     const paletteBox1 = document.getElementById("color1");
