@@ -31,7 +31,7 @@
         url('Vegur-Light.woff') format('woff'),
         url('Vegur-Light.ttf') format('truetype'),
         url('Vegur-Light.svg#Vegur-Light') format('svg');
-    font-weight: light;
+    font-weight: lighter;
     font-style: normal;
     font-display: swap;
 }
