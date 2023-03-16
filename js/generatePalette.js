@@ -480,6 +480,7 @@ function compilePalette(color0, color1, color2, color3, color4, color5, color6, 
 
     // Show The Palette Onto the Website
     setHEXPalette(color0HEX, color1HEX, color2HEX, color3HEX, color4HEX, color5HEX, color6HEX, color7HEX, color8HEX, color9HEX, color10HEX, defBrightness)
+    setRGBPalette(color0, color1, color2, color3, color4, color5, color6, color7, color8, color9, color10)
 }
 
 function setHEXPalette(c0, c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, defBrightness) {
@@ -526,4 +527,54 @@ function setHEXPalette(c0, c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, defBrightnes
     // Add .default class to the default brightness
     defaultPaletteBox.classList.add('default');
 
+}
+
+function setRGBPalette(c0, c1, c2, c3, c4, c5, c6, c7, c8, c9, c10) {
+    // Set Function Constants
+    const paletteBox0 = document.getElementById("color0");
+    const paletteBox1 = document.getElementById("color1");
+    const paletteBox2 = document.getElementById("color2");
+    const paletteBox3 = document.getElementById("color3");
+    const paletteBox4 = document.getElementById("color4");
+    const paletteBox5 = document.getElementById("color5");
+    const paletteBox6 = document.getElementById("color6");
+    const paletteBox7 = document.getElementById("color7");
+    const paletteBox8 = document.getElementById("color8");
+    const paletteBox9 = document.getElementById("color9");
+    const paletteBox10 = document.getElementById("color10");
+
+    // Insert Colors into the elements
+    paletteBox0.querySelector(".rgb").querySelector(".r").textContent = c0.red;
+    paletteBox0.querySelector(".rgb").querySelector(".g").textContent = c0.green;
+    paletteBox0.querySelector(".rgb").querySelector(".b").textContent = c0.blue;
+    paletteBox1.querySelector(".rgb").querySelector(".r").textContent = c1.red;
+    paletteBox1.querySelector(".rgb").querySelector(".g").textContent = c1.green;
+    paletteBox1.querySelector(".rgb").querySelector(".b").textContent = c1.blue;
+    paletteBox2.querySelector(".rgb").querySelector(".r").textContent = c2.red;
+    paletteBox2.querySelector(".rgb").querySelector(".g").textContent = c2.green;
+    paletteBox2.querySelector(".rgb").querySelector(".b").textContent = c2.blue;
+    paletteBox3.querySelector(".rgb").querySelector(".r").textContent = c3.red;
+    paletteBox3.querySelector(".rgb").querySelector(".g").textContent = c3.green;
+    paletteBox3.querySelector(".rgb").querySelector(".b").textContent = c3.blue;
+    paletteBox4.querySelector(".rgb").querySelector(".r").textContent = c4.red;
+    paletteBox4.querySelector(".rgb").querySelector(".g").textContent = c4.green;
+    paletteBox4.querySelector(".rgb").querySelector(".b").textContent = c4.blue;
+    paletteBox5.querySelector(".rgb").querySelector(".r").textContent = c5.red;
+    paletteBox5.querySelector(".rgb").querySelector(".g").textContent = c5.green;
+    paletteBox5.querySelector(".rgb").querySelector(".b").textContent = c5.blue;
+    paletteBox6.querySelector(".rgb").querySelector(".r").textContent = c6.red;
+    paletteBox6.querySelector(".rgb").querySelector(".g").textContent = c6.green;
+    paletteBox6.querySelector(".rgb").querySelector(".b").textContent = c6.blue;
+    paletteBox7.querySelector(".rgb").querySelector(".r").textContent = c7.red;
+    paletteBox7.querySelector(".rgb").querySelector(".g").textContent = c7.green;
+    paletteBox7.querySelector(".rgb").querySelector(".b").textContent = c7.blue;
+    paletteBox8.querySelector(".rgb").querySelector(".r").textContent = c8.red;
+    paletteBox8.querySelector(".rgb").querySelector(".g").textContent = c8.green;
+    paletteBox8.querySelector(".rgb").querySelector(".b").textContent = c8.blue;
+    paletteBox9.querySelector(".rgb").querySelector(".r").textContent = c9.red;
+    paletteBox9.querySelector(".rgb").querySelector(".g").textContent = c9.green;
+    paletteBox9.querySelector(".rgb").querySelector(".b").textContent = c9.blue;
+    paletteBox10.querySelector(".rgb").querySelector(".r").textContent = c10.red;
+    paletteBox10.querySelector(".rgb").querySelector(".g").textContent = c10.green;
+    paletteBox10.querySelector(".rgb").querySelector(".b").textContent = c10.blue;
 }
