@@ -159,6 +159,7 @@ div.maincolorpallettebox.default#color7>span.hex {
     margin: auto;
     width: fit-content;
     height: fit-content;
+    margin-top: 47.5%;
 }
 
 div.maincolorpallettebox.default#color8>span.hex,
@@ -171,6 +172,7 @@ div.maincolorpallettebox.default#color10>span.hex {
     margin: auto;
     width: fit-content;
     height: fit-content;
+    margin-top: 47.5%;
 }
 
 div.maincolorpallettebox>.rgb {
