@@ -173,7 +173,7 @@ div.maincolorpallettebox.default#color10>span.hex {
     height: fit-content;
 }
 
-div.maincolorpallettebox > .rgb {
+div.maincolorpallettebox>.rgb {
     display: flex;
     background-color: #FFFFFF;
     font-size: 12px;
@@ -183,6 +183,9 @@ div.maincolorpallettebox > .rgb {
     height: fit-content;
     padding: 15px 0px;
     position: absolute;
+    text-align: center;
+    display: grid;
+    line-height: 15px;
 }
 
 div.maincolorpallettebox>.r,
@@ -203,9 +206,7 @@ div.maincolorpallettebox>.b {
     color: blue;
 }
 
-div.maincolorpallettebox.default > .rgb {
+div.maincolorpallettebox.default>.rgb {
     font-weight: bold;
-    text-align: center;
-    display: grid;
-    line-height: 15px;
+
 }
