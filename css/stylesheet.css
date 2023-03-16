@@ -194,15 +194,15 @@ div.maincolorpallettebox>.b {
     display: block;
 }
 
-div.maincolorpallettebox>.r {
+div.maincolorpallettebox>.rgb>.r {
     color: red;
 }
 
-div.maincolorpallettebox>.g {
+div.maincolorpallettebox>.rgb>.g {
     color: green;
 }
 
-div.maincolorpallettebox>.b {
+div.maincolorpallettebox>.rgb>.b {
     color: blue;
 }
 
