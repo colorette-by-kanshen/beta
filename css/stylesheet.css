@@ -203,4 +203,6 @@ div.maincolorpallettebox>.b {
 
 div.maincolorpallettebox.default > .rgb {
     font-weight: bold;
+    text-align: center;
+    display: block;
 }
