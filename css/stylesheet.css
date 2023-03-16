@@ -110,6 +110,7 @@ input[type="text"] {
     width: 9.0909090909%;
     border: 3px solid #F0F0F0;
     color: #F0F0F0;
+    position: relative;
 }
 
 div.maincolorpallettebox#color0>span.hex,
@@ -179,6 +180,7 @@ div.maincolorpallettebox > .rgb {
     width: 100%;
     height: fit-content;
     padding: 15px 0px;
+    position: absolute;
 }
 
 div.maincolorpallettebox>.r,
