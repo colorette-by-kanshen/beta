@@ -128,7 +128,7 @@ div.maincolorpallettebox#color7>span.hex {
     width: fit-content;
     height: fit-content;
     color: #F0F0F0;
-    margin-top: 55%;
+    margin-top: 47.5%;
 }
 
 div.maincolorpallettebox#color8>span.hex,
@@ -141,7 +141,7 @@ div.maincolorpallettebox#color10>span.hex {
     width: fit-content;
     height: fit-content;
     color: #0F0F0F;
-    margin-top: 55%;
+    margin-top: 47.5%;
 }
 
 div.maincolorpallettebox.default#color0>span.hex,
@@ -207,4 +207,5 @@ div.maincolorpallettebox.default > .rgb {
     font-weight: bold;
     text-align: center;
     display: block;
+    line-height: 15px;
 }
