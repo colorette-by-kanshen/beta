@@ -169,3 +169,36 @@ div.maincolorpallettebox.default#color10>span.hex {
     width: fit-content;
     height: fit-content;
 }
+
+div.maincolorpallettebox > .rgb {
+    display: flex;
+    background-color: #FFFFFF;
+    font-size: 12px;
+    font-family: 'Vegur';
+    bottom: 0;
+    width: 100%;
+    height: fit-content;
+    padding: 15px 0px;
+}
+
+div.maincolorpallettebox>.r,
+div.maincolorpallettebox>.g,
+div.maincolorpallettebox>.b {
+    display: block;
+}
+
+div.maincolorpallettebox>.r {
+    color: red;
+}
+
+div.maincolorpallettebox>.g {
+    color: green;
+}
+
+div.maincolorpallettebox>.b {
+    color: blue;
+}
+
+div.maincolorpallettebox.default > .rgb {
+    font-weight: bold;
+}

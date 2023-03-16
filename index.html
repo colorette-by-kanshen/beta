@@ -1,48 +1,115 @@
 <html>
-    <head>
-        <title>colorétte +</title>
-        <link href="css/stylesheet.css" rel="stylesheet">
-        <link href="fonts/stylesheet.css" rel="stylesheet">
-        <link rel="preload" href="img/logo-black.png" as="image">
-        <link rel="preload" href="img/logo-white.png" as="image">
-        <header>
-            <div id="logo-image">
-                <img src="img/logo-white.png" id="logo">
-            </div>
-        </header>
-        <scripts>
-            <script src="js/changeTheme.js"></script>
-            <script src="js/setColor.js"></script>
-            <script src="js/checkColor.js"></script>
-            <script src="js/formCheck.js"></script>
-            <script src="js/getColorBrightness.js"></script>
-            <script src="js/generatePalette.js"></script>
-            <script src="js/embed.js"></script>
-            <script>
-                window.addEventListener('load', checkColor);
-            </script>
-        </scripts>
-        </head>
-    <body>
-        <div id="color-selector">
-            <form>
-                <input type="text" id="hex-input" name="color" pattern="[a-fA-F0-9]{6}" required maxlength="6" minlength="6" placeholder="0F0F0F">
-                <input type="button" value="GENERATE" onclick="formCheck()">
-            </form>
+<head>
+    <title>colorétte +</title>
+    <link href="css/stylesheet.css" rel="stylesheet">
+    <link href="fonts/stylesheet.css" rel="stylesheet">
+    <link rel="preload" href="img/logo-black.png" as="image">
+    <link rel="preload" href="img/logo-white.png" as="image">
+    <header>
+        <div id="logo-image">
+            <img src="img/logo-white.png" id="logo">
         </div>
-        <div id="maincolorpalletteholder" class="maincolorpallette">
-            <div id="color0" class="maincolorpallette maincolorpallettebox"><span class="hex" id="colorhex0"></span></div>
-            <div id="color1" class="maincolorpallette maincolorpallettebox"><span class="hex" id="colorhex1"></span></div>
-            <div id="color2" class="maincolorpallette maincolorpallettebox"><span class="hex" id="colorhex2"></span></div>
-            <div id="color3" class="maincolorpallette maincolorpallettebox"><span class="hex" id="colorhex3"></span></div>
-            <div id="color4" class="maincolorpallette maincolorpallettebox"><span class="hex" id="colorhex4"></span></div>
-            <div id="color5" class="maincolorpallette maincolorpallettebox"><span class="hex" id="colorhex5"></span></div>
-            <div id="color6" class="maincolorpallette maincolorpallettebox"><span class="hex" id="colorhex6"></span></div>
-            <div id="color7" class="maincolorpallette maincolorpallettebox"><span class="hex" id="colorhex7"></span></div>
-            <div id="color8" class="maincolorpallette maincolorpallettebox"><span class="hex" id="colorhex8"></span></div>
-            <div id="color9" class="maincolorpallette maincolorpallettebox"><span class="hex" id="colorhex9"></span></div>
-            <div id="color10" class="maincolorpallette maincolorpallettebox"><span class="hex" id="colorhex10"></span></div>
+    </header>
+    <scripts>
+        <script src="js/changeTheme.js"></script>
+        <script src="js/setColor.js"></script>
+        <script src="js/checkColor.js"></script>
+        <script src="js/formCheck.js"></script>
+        <script src="js/getColorBrightness.js"></script>
+        <script src="js/generatePalette.js"></script>
+        <script src="js/embed.js"></script>
+        <script>
+            window.addEventListener('load', checkColor);
+        </script>
+    </scripts>
+</head>
+<body>
+    <div id="color-selector">
+        <form>
+            <input type="text" id="hex-input" name="color" pattern="[a-fA-F0-9]{6}" required maxlength="6" minlength="6"
+                placeholder="0F0F0F">
+            <input type="button" value="GENERATE" onclick="formCheck()">
+        </form>
+    </div>
+    <div id="maincolorpalletteholder" class="maincolorpallette">
+        <div id="color0" class="maincolorpallette maincolorpallettebox"><span class="hex" id="colorhex0"></span>
+            <span class="rgb" id="rgb0">
+                <span class="r" id="red0"></span>
+                <span class="g" id="green0"></span>
+                <span class="b" id="blue0"></span>
+            </span>
         </div>
-        <p style="text-align: center">The Color Palette Generator currently uses <strong>Version 3.2</strong> of the Color Generator from commit <strong><a href="https://github.com/colorette-by-kanshen/colorette-by-kanshen.github.io/commit/4051d19" target="_blank" rel="noopener noreferrer">4051d19</a></strong>.</p>
-    </body>
+        <div id="color1" class="maincolorpallette maincolorpallettebox"><span class="hex" id="colorhex1"></span>
+            <span class="rgb" id="rgb1">
+                <span class="r" id="red1"></span>
+                <span class="g" id="green1"></span>
+                <span class="b" id="blue1"></span>
+            </span>
+        </div>
+        <div id="color2" class="maincolorpallette maincolorpallettebox"><span class="hex" id="colorhex2"></span>
+            <span class="rgb" id="rgb2">
+                <span class="r" id="red2"></span>
+                <span class="g" id="green2"></span>
+                <span class="b" id="blue2"></span>
+            </span>
+        </div>
+        <div id="color3" class="maincolorpallette maincolorpallettebox"><span class="hex" id="colorhex3"></span>
+            <span class="rgb" id="rgb3">
+                <span class="r" id="red3"></span>
+                <span class="g" id="green3"></span>
+                <span class="b" id="blue3"></span>
+            </span>
+        </div>
+        <div id="color4" class="maincolorpallette maincolorpallettebox"><span class="hex" id="colorhex4"></span>
+            <span class="rgb" id="rgb4">
+                <span class="r" id="red4"></span>
+                <span class="g" id="green4"></span>
+                <span class="b" id="blue4"></span>
+            </span>
+        </div>
+        <div id="color5" class="maincolorpallette maincolorpallettebox"><span class="hex" id="colorhex5"></span>
+            <span class="rgb" id="rgb5">
+                <span class="r" id="red5"></span>
+                <span class="g" id="green5"></span>
+                <span class="b" id="blue5"></span>
+            </span>
+        </div>
+        <div id="color6" class="maincolorpallette maincolorpallettebox"><span class="hex" id="colorhex6"></span>
+            <span class="rgb" id="rgb6">
+                <span class="r" id="red6"></span>
+                <span class="g" id="green6"></span>
+                <span class="b" id="blue6"></span>
+            </span>
+        </div>
+        <div id="color7" class="maincolorpallette maincolorpallettebox"><span class="hex" id="colorhex7"></span>
+            <span class="rgb" id="rgb7">
+                <span class="r" id="red7"></span>
+                <span class="g" id="green7"></span>
+                <span class="b" id="blue7"></span>
+            </span>
+        </div>
+        <div id="color8" class="maincolorpallette maincolorpallettebox"><span class="hex" id="colorhex8"></span>
+            <span class="rgb" id="rgb8">
+                <span class="r" id="red8"></span>
+                <span class="g" id="green8"></span>
+                <span class="b" id="blue8"></span>
+            </span>
+        </div>
+        <div id="color9" class="maincolorpallette maincolorpallettebox"><span class="hex" id="colorhex9"></span>
+            <span class="rgb" id="rgb9">
+                <span class="r" id="red9"></span>
+                <span class="g" id="green9"></span>
+                <span class="b" id="blue9"></span>
+            </span>
+        </div>
+        <div id="color10" class="maincolorpallette maincolorpallettebox"><span class="hex" id="colorhex10"></span>
+            <span class="rgb" id="rgb10">
+                <span class="r" id="red10"></span>
+                <span class="g" id="green10"></span>
+                <span class="b" id="blue10"></span>
+            </span>
+        </div>
+    </div>
+    <p style="text-align: center">The Color Palette Generator currently uses <strong>Version 3.2</strong> of the Color Generator from commit <strong><a href="https://github.com/colorette-by-kanshen/colorette-by-kanshen.github.io/commit/4051d19"target="_blank" rel="noopener noreferrer">4051d19</a></strong>.</p>
+</body>
 </html>
