@@ -496,7 +496,6 @@ function setPalette(c0, c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, defBrightness) 
     const paletteBox9 = document.getElementById("color9");
     const paletteBox10 = document.getElementById("color10");
     const defaultPaletteBox = document.getElementById(`color${defBrightness}`);
-    const defaultColorSPAN = defaultPaletteBox.querySelector(".hex")
 
     // Show The Palette Onto the Website
     paletteBox0.style.backgroundColor = "#" + c0;
