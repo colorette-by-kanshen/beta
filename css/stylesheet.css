@@ -128,7 +128,7 @@ div.maincolorpallettebox#color7>span.hex {
     width: fit-content;
     height: fit-content;
     color: #F0F0F0;
-    margin-top: 47.5%;
+    margin-top: 32.125;
 }
 
 div.maincolorpallettebox#color8>span.hex,
@@ -141,7 +141,7 @@ div.maincolorpallettebox#color10>span.hex {
     width: fit-content;
     height: fit-content;
     color: #0F0F0F;
-    margin-top: 47.5%;
+    margin-top: 32.125;
 }
 
 div.maincolorpallettebox.default#color0>span.hex,
@@ -159,7 +159,7 @@ div.maincolorpallettebox.default#color7>span.hex {
     margin: auto;
     width: fit-content;
     height: fit-content;
-    margin-top: 47.5%;
+    margin-top: 32.125;
 }
 
 div.maincolorpallettebox.default#color8>span.hex,
@@ -172,7 +172,7 @@ div.maincolorpallettebox.default#color10>span.hex {
     margin: auto;
     width: fit-content;
     height: fit-content;
-    margin-top: 47.5%;
+    margin-top: 32.125;
 }
 
 div.maincolorpallettebox>.rgb {
