@@ -242,7 +242,7 @@ credits {
 }
 
 credits>a {
-    text-decoration: none !important;
+    text-decoration: none;
     color: inherit !important;
     text-decoration-color: #0F0F0F;
 }
