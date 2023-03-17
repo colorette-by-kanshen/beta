@@ -216,3 +216,27 @@ div.maincolorpallettebox.default>.rgb {
     font-weight: bold;
 
 }
+
+footer {
+    align-items: flex-end;
+    width: 100%;
+    background-color: #F0F0F0;
+    bottom: 0px;
+    position: absolute;
+    height: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+credits {
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+    font-family: 'Vegur';
+    color: #0F0F0F;
+    background-color: #F0F0F0;
+    font-size: 12px;
+    padding: 10px;
+    text-decoration: none;
+}
