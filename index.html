@@ -1,4 +1,5 @@
 <html>
+
 <head>
     <title>colorétte +</title>
     <link href="css/stylesheet.css" rel="stylesheet">
@@ -21,8 +22,40 @@
         <script>
             window.addEventListener('load', checkColor);
         </script>
+        <script>
+                function setColorsDisplay() {
+                    const hexElements = document.querySelectorAll('.maincolorpallettebox .hex');
+                    const rgbElements = document.querySelectorAll('.maincolorpallettebox .rgb');
+
+                    if (window.innerWidth <= 630) {
+                        hexElements.forEach(element => {
+                            element.style.display = 'none';
+                        });
+                    } else {
+                        hexElements.forEach(element => {
+                            element.style.display = 'block';
+                        });
+                    }
+
+                    if (window.innerWidth <= 300) {
+                        rgbElements.forEach(element => {
+                            element.style.display = 'none';
+                        });
+                    } else {
+                        rgbElements.forEach(element => {
+                            element.style.display = 'grid';
+                        });
+                    }
+                }
+
+                setColorsDisplay();
+                window.addEventListener('resize', setColorsDisplay);
+            
+
+        </script>
     </scripts>
 </head>
+
 <body>
     <div id="color-selector">
         <form>
@@ -110,6 +143,12 @@
             </span>
         </div>
     </div>
-    <p style="text-align: center">The Color Palette Generator currently uses <strong>Version 3.2</strong> of the Color Generator from commit <strong><a href="https://github.com/colorette-by-kanshen/colorette-by-kanshen.github.io/commit/4051d19"target="_blank" rel="noopener noreferrer">4051d19</a></strong>.</p>
+    <p style="text-align: center">The Color Palette Generator currently uses <strong>Version 3.2</strong> of the Color
+        Generator from commit <strong><a
+                href="https://github.com/colorette-by-kanshen/colorette-by-kanshen.github.io/commit/4051d19"
+                target="_blank" rel="noopener noreferrer">4051d19</a></strong>.</p>
 </body>
+<footer>
+    <credits><a href="https://kanshen.click">© Created by Richard Kanshen 2023</a></credits>
+</footer>
 </html>
