@@ -242,9 +242,9 @@ credits {
 }
 
 credits>a {
-    text-decoration: none;
-    color: inherit;
-    text-decoration-color: #F0F0F0;
+    text-decoration: none !important;
+    color: inherit !important;
+    text-decoration-color: #0F0F0F;
 }
 
 credits>a:hover {
