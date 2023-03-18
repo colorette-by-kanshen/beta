@@ -11,6 +11,12 @@ function formCheck() {
     alert("Please enter a valid 6-digit hexadecimal color code");
     return;
   }
+
+  var url = new URL(window.location.href);
+  var colorParam = url.searchParams.get("color");
+  if (colorParam === hex) {
+    return
+  }
   
   setColor();
 }
