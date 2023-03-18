@@ -223,7 +223,7 @@
         width: 100%;
         background-color: #F0F0F0;
         bottom: 0px;
-        position: absolute;
+        position: static;
         height: 35px;
         display: flex;
         flex-wrap: wrap;
@@ -486,7 +486,7 @@
         width: 102%;
         background-color: #F0F0F0;
         bottom: 0px;
-        position: relative;
+        position: static;
         height: fit-content;
         display: flex;
         flex-wrap: wrap;
