@@ -22,6 +22,7 @@
         <script>
             window.addEventListener('load', checkColor);
         </script>
+        <script src="js/randomizeColor.js"></script>
         <script>
             function setColorsDisplay() {
                 const hexElements = document.querySelectorAll('.maincolorpallettebox .hex');
@@ -65,7 +66,7 @@
             </div>
             <div id="button-container">
                 <input type="button" value="GENERATE" onclick="formCheck()">
-                <button id="randomizer" value="RANDOM" onclick="formCheck()">
+                <button id="randomizer" value="RANDOM" onclick="getRandomColor()">
                     <svg width="25px" height="25px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
                         class="iconify iconify--emojione" preserveAspectRatio="xMidYMid meet" fill="#ffffff"
