@@ -360,6 +360,7 @@
         min-width: 90%;
         margin-right: auto;
         margin-left: auto;
+        flex-direction: column;
     }
 
     .maincolorpallettebox {
@@ -369,7 +370,6 @@
         border: 3px solid #F0F0F0;
         color: #F0F0F0;
         position: relative;
-        flex-direction: column;
     }
 
     div.maincolorpallettebox#color0>span.hex,
@@ -452,7 +452,11 @@
         text-align: center;
         align-items: center;
         display: flex;
-        line-height: 15px;
+        line-height: 35px;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
     }
 
     div.maincolorpallettebox>.r,
