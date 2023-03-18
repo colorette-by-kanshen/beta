@@ -73,7 +73,17 @@
         border-radius: 30px;
         background-color: #0F0F0F;
         color: #F0F0F0;
-        border: none;
+        font-size: 14px;
+        text-align: center;
+        border: 1px solid #F0F0F0;
+    }
+
+    button#randomizer {
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        background-color: #0F0F0F;
+        color: #F0F0F0;
         font-size: 14px;
         text-align: center;
         border: 1px solid #F0F0F0;
