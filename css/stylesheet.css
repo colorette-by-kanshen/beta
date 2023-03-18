@@ -232,7 +232,7 @@
 
     credits {
         bottom: 0;
-        position: absolute;
+        position: relative;
         text-align: center;
         font-family: 'Vegur';
         color: #0F0F0F;
