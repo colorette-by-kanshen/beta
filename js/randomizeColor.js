@@ -9,6 +9,7 @@ function getRandomColor() {
 
 function setRandomColor(randomColor) {
     var url = new URL(window.location.href);
+    url.searchParams.delete("color");
     url.searchParams.set("color", randomColor);
     url.searchParams.set("random", true)
     window.location.href = url.href;
