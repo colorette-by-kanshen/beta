@@ -223,7 +223,7 @@
         width: 100%;
         background-color: #F0F0F0;
         bottom: 0px;
-        position: static;
+        position: inherit;
         height: 35px;
         display: flex;
         flex-wrap: wrap;
