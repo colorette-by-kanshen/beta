@@ -454,6 +454,8 @@
         align-items: center;
         display: flex;
         line-height: 20px;
+        flex-wrap: wrap;
+        flex-direction: column;
     }
 
     div.maincolorpallettebox>.r,
