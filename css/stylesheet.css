@@ -365,7 +365,7 @@
 
     .maincolorpallettebox {
         display: flex;
-        height: 150px;
+        height: 100px;
         width: 100%;
         border: 3px solid #F0F0F0;
         color: #F0F0F0;
@@ -447,13 +447,13 @@
         bottom: 0;
         left: 0;
         width: 50%;
-        height: 80%;
+        height: 70%;
         padding: 15px 0px;
         position: absolute;
         text-align: center;
         align-items: center;
         display: flex;
-        line-height: 15px;
+        line-height: 20px;
     }
 
     div.maincolorpallettebox>.r,
