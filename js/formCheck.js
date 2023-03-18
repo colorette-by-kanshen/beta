@@ -14,7 +14,7 @@ function formCheck() {
 
   var url = new URL(window.location.href);
   var colorParam = url.searchParams.get("color");
-  if (colorParam === hex) {
+  if (colorParam.toUpperCase === hex.toUpperCase) {
     return
   }
   
