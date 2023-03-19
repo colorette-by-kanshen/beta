@@ -349,13 +349,22 @@
         flex-direction: column;
     }
 
+    #button-container {
+        width: 95%;
+        display: flex;
+        align-content: space-between;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+
     input[type="button"] {
         width: 49%;
         height: 75px;
         border-radius: 30px;
         background-color: #0F0F0F;
         color: #F0F0F0;
-        /* border: none; */
         font-size: 28px;
         text-align: center;
         border: 1px solid #F0F0F0;
@@ -375,7 +384,7 @@
     }
 
     input[type="text"] {
-        width: 250px;
+        width: 90%;
         height: 75px;
         border-radius: 30px;
         border: none;
