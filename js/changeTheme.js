@@ -14,7 +14,6 @@ function updateLogoColor(color) {
   var logo = document.getElementById("logo");
   var header = document.querySelector("header");
 
-  formField.value = color;
   formField.style.background = "#" + color;
   logo.style.background = "#" + color;
 
@@ -33,5 +32,23 @@ function updateLogoColor(color) {
     logo.src = "img/logo-white.png";
     header.style.backgroundColor = "#FFFFFF";
     formField.style.color = "#FFFFFF"
+  }
+}
+
+function updateAltCSSColor(color) {
+  const AlternateCSSDIV = getElementById("alternatenames")
+  const placeholderOneSpan = document.getElementById('placeholderone');
+  const placeholderTwoSpan = document.getElementById('placeholdertwo');
+  // test if all color channels are at least 150
+  if (r >= 150 && g >= 150 && b >= 150) {
+    // set AlternateCSSDIV Color to Dark Mode
+    AlternateCSSDIV.backgroundColor = "#000000";
+    placeholderOneSpan.color = "#FFFFFF";
+    placeholderTwoSpan.color = "#FFFFFF"
+  } else {
+    // set AlternateCSSDIV Color to Light Mode
+    AlternateCSSDIV.backgroundColor = "#FFFFFF";
+    placeholderOneSpan.color = "#000000";
+    placeholderTwoSpan.color = "#000000"
   }
 }
