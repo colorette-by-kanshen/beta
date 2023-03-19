@@ -1,6 +1,6 @@
 const urlParams = new URLSearchParams(window.location.search);
 const colorParam = urlParams.get('color');
-const colors = fetch('json/colors.json').then(response => response.json());
+const colors = fetch('json/colornames.json').then(response => response.json());
 
 let matchingColors = colors.filter(color => color.hex() === colorParam.toUpperCase());
 
