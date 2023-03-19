@@ -1,18 +1,13 @@
-async function loadColors() {
-    let colorsData = {};
+function alternateNames(color) {
+    // Load the json file
+    const colornames = require('json/colornames.json');
 
-    fetch('json/colornames.json')
-        .then(response => response.json())
-        .then(data => colorsData = data);
-    const colorsJson = await response.json();
-    const colorsObject = {};
-    colorsJson.forEach(color => {
-        colorsObject[color.hex] = color;
-    });
-    const colors = await loadColors();
-    const color = urlParams.get('color');
-    const matchingColor = colors[colorHex];
-    if (matchingColor) {
-        console.log(matchingColor.name);
+    // Compare the color parameter to all hex values in the objects of the json file
+    for (let i = 0; i < colornames.length; i++) {
+        if (colornames[i].hex === color) {
+            return colornames[i].name;
+        }
     }
+    // If no match is found, return null
+    return null;
 }

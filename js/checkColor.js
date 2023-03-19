@@ -22,5 +22,5 @@ function checkColor() {
   if (random === "true") {
     document.getElementById("randomcolorinfo").style.display = "block";
   };
-  checkAlternateNames()
+  alternateNames("#" + color)
 }
