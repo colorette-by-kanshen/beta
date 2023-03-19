@@ -2,7 +2,9 @@ const urlParams = new URLSearchParams(window.location.search);
 const colorParam = urlParams.get('color');
 const colors = fetch('json/colornames.json').then(response => response.json());
 
-let matchingColors = colors.filter(color => color.hex() === colorParam.toUpperCase());
+const colorsArray = Object.values(colors);
+
+let matchingColors = colorsArray.filter(color => color.hex.toUpperCase() === colorParam.toUpperCase());
 
 const alternateNamesDiv = document.getElementById('alternatenames');
 
