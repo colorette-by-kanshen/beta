@@ -18,8 +18,9 @@ function checkColor() {
     document.getElementById('color10').style.display = "flex";
     document.getElementById('maincolorpalletteholder').style.display = "flex";
     getColorBrightness(color);
-  }
+  };
   if (random === "true") {
     document.getElementById("randomcolorinfo").style.display = "block";
-  }
+  };
+  checkAlternateNames()
 }
