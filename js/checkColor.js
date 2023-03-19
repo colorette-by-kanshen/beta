@@ -19,7 +19,7 @@ function checkColor() {
     document.getElementById('maincolorpalletteholder').style.display = "flex";
     getColorBrightness(color);
   }
-  if (random === true) {
-    document.getElementById("randomcolorinfo").style.display = "flex";
+  if (random === "true") {
+    document.getElementById("randomcolorinfo").style.display = "block";
   }
 }
