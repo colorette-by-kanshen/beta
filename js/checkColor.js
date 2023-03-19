@@ -1,6 +1,7 @@
 function checkColor() {
   const urlParams = new URLSearchParams(window.location.search);
   const color = urlParams.get('color');
+  const random = urlParams.get('random');
   if (color) {
     document.getElementById('hex-input').value = color;
     changeTheme(color);
@@ -17,5 +18,8 @@ function checkColor() {
     document.getElementById('color10').style.display = "flex";
     document.getElementById('maincolorpalletteholder').style.display = "flex";
     getColorBrightness(color);
+  }
+  if (random === true) {
+    document.getElementById("randomcolorinfo").style.display = "flex";
   }
 }
