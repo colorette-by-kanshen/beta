@@ -1,5 +1,9 @@
 async function loadColors() {
-    const response = await fetch('json/colornames.json');
+    let colorsData = {};
+
+    fetch('json/colornames.json')
+        .then(response => response.json())
+        .then(data => colorsData = data);
     const colorsJson = await response.json();
     const colorsObject = {};
     colorsJson.forEach(color => {
