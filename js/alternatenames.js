@@ -1,7 +1,8 @@
-function checkAlternateNames() {
+async function checkAlternateNames() {
     const urlParams = new URLSearchParams(window.location.search);
     const colorParam = urlParams.get('color');
-    const colors = fetch('json/colornames.json').then(response => response.json());
+    const response = await fetch('json/colornames.json');
+    const colors = await response.json();
 
     const colorsArray = Object.values(colors);
 
