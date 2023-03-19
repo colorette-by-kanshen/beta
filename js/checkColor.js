@@ -2,7 +2,6 @@ function checkColor() {
   const urlParams = new URLSearchParams(window.location.search);
   const color = urlParams.get('color');
   const random = urlParams.get('random');
-  alternateNames("#" + color)
   if (color) {
     document.getElementById('hex-input').value = color;
     changeTheme(color);
