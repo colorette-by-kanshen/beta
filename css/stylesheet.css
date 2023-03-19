@@ -350,12 +350,12 @@
     }
 
     input[type="button"] {
-        width: 75%;
+        width: 49%;
         height: 75px;
         border-radius: 30px;
         background-color: #0F0F0F;
         color: #F0F0F0;
-        border: none;
+        /* border: none; */
         font-size: 28px;
         text-align: center;
         border: 1px solid #F0F0F0;
@@ -363,7 +363,7 @@
     }
 
     button#randomizer {
-        width: 15%;
+        width: 49%;
         height: 75px;
         border-radius: 30px;
         background-color: #0F0F0F;
@@ -526,7 +526,7 @@
         width: 102%;
         background-color: #F0F0F0;
         bottom: 0px;
-        position: static;
+        position: fixed;
         height: fit-content;
         display: flex;
         flex-wrap: wrap;
