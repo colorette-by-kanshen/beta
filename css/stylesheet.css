@@ -279,16 +279,6 @@
         text-decoration: underline;
     }
 
-    /*Alternative CSS Names*/
-    div#alternatenames {
-        width: 90%;
-        height: 50px;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 3px;
-        display: none;
-    }
 }
 
 @media (orientation: portrait) {
@@ -426,7 +416,6 @@
     .maincolorpallettebox {
         display: flex;
         height: 100px;
-        width: 100%;
         border: 3px solid #F0F0F0;
         color: #F0F0F0;
         position: relative;
