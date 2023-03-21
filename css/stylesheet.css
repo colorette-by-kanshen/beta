@@ -290,32 +290,46 @@
         min-width: 90%;
     }
 
+    div#contrastcheckbox>div#contrastwhite,
+    div#contrastcheckbox>div#contrastwhite {
+        display: flex;
+        border: 3px solid #F0F0F0;
+    }
+
     div.contrastcheck.contrastleft.contrastwhite {
         color: white;
-        left: 0;
+        margin-left: 0;
         width: 50%;
         height: 200px;
+        font-family: 'Bebas Neue';
+        font-weight: normal;
     }
 
     div.contrastcheck.contrastright.contrastwhite {
         background-color: white;
-        right: 0;
+        margin-right: 0;
         width: 50%;
         height: 200px;
+        font-family: 'Bebas Neue';
+        font-weight: normal;
     }
 
     div.contrastcheck.contrastleft.contrastblack {
         color: black;
-        left: 0;
+        margin-left: 0;
         width: 50%;
         height: 200px;
+        font-family: 'Bebas Neue';
+        font-weight: normal;
     }
 
     div.contrastcheck.contrastright.contrastblack {
         background-color: black;
-        right: 0;
+        margin-right: 0;
         width: 50%;
         height: 200px;
+        font-family: 'Bebas Neue';
+        font-weight: normal;
     }
 }
 
@@ -621,9 +635,15 @@
         flex-direction: column;
     }
 
+    div#contrastcheckbox>div#contrastwhite,
+    div#contrastcheckbox>div#contrastwhite {
+        display: flex;
+        border: 3px solid #F0F0F0;
+    }
+
     div.contrastcheck.contrastleft.contrastwhite {
         color: white;
-        left: 0;
+        margin-left: 0;
         width: 50%;
         height: 200px;
         font-family: 'Bebas Neue';
@@ -632,7 +652,7 @@
 
     div.contrastcheck.contrastright.contrastwhite {
         background-color: white;
-        right: 0;
+        margin-right: 0;
         width: 50%;
         height: 200px;
         font-family: 'Bebas Neue';
@@ -641,7 +661,7 @@
 
     div.contrastcheck.contrastleft.contrastblack {
         color: black;
-        left: 0;
+        margin-left: 0;
         width: 50%;
         height: 200px;
         font-family: 'Bebas Neue';
@@ -650,7 +670,7 @@
 
     div.contrastcheck.contrastright.contrastblack {
         background-color: black;
-        right: 0;
+        margin-right: 0;
         width: 50%;
         height: 200px;
         font-family: 'Bebas Neue';
