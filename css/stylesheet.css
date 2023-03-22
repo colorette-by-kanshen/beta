@@ -296,7 +296,7 @@
         border: 3px solid #F0F0F0;
     }
 
-    div.contrastcheck.contrastleft.contrastwhite {
+    div.contrastcheck.contrasttop.contrastwhite {
         color: white;
         margin-left: 0;
         width: 50%;
@@ -305,7 +305,7 @@
         font-weight: normal;
     }
 
-    div.contrastcheck.contrastright.contrastwhite {
+    div.contrastcheck.contrastbottom.contrastwhite {
         background-color: white;
         margin-right: 0;
         width: 50%;
@@ -314,7 +314,7 @@
         font-weight: normal;
     }
 
-    div.contrastcheck.contrastleft.contrastblack {
+    div.contrastcheck.contrasttop.contrastblack {
         color: black;
         margin-left: 0;
         width: 50%;
@@ -323,7 +323,7 @@
         font-weight: normal;
     }
 
-    div.contrastcheck.contrastright.contrastblack {
+    div.contrastcheck.contrastbottom.contrastblack {
         background-color: black;
         margin-right: 0;
         width: 50%;
@@ -641,7 +641,7 @@
         border: 3px solid #F0F0F0;
     }
 
-    div.contrastcheck.contrastleft.contrastwhite {
+    div.contrastcheck.contrasttop.contrastwhite {
         color: white;
         margin-left: 0;
         width: 50%;
@@ -650,7 +650,7 @@
         font-weight: normal;
     }
 
-    div.contrastcheck.contrastright.contrastwhite {
+    div.contrastcheck.contrastbottom.contrastwhite {
         background-color: white;
         margin-right: 0;
         width: 50%;
@@ -659,7 +659,7 @@
         font-weight: normal;
     }
 
-    div.contrastcheck.contrastleft.contrastblack {
+    div.contrastcheck.contrasttop.contrastblack {
         color: black;
         margin-left: 0;
         width: 50%;
@@ -668,7 +668,7 @@
         font-weight: normal;
     }
 
-    div.contrastcheck.contrastright.contrastblack {
+    div.contrastcheck.contrastbottom.contrastblack {
         background-color: black;
         margin-right: 0;
         width: 50%;
