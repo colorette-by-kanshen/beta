@@ -632,29 +632,30 @@
         min-width: 90%;
         margin-right: auto;
         margin-left: auto;
-        flex-direction: column;
+        flex-direction: row;
     }
 
     div#contrastcheckbox>div#contrastwhite,
     div#contrastcheckbox>div#contrastwhite {
         display: flex;
         border: 3px solid #F0F0F0;
+        flex-direction: column;
     }
 
     div.contrastcheck.contrasttop.contrastwhite {
         color: white;
         margin-left: 0;
-        width: 50%;
-        height: 200px;
+        width: 100%;
+        height: 50%;
         font-family: 'Bebas Neue';
         font-weight: normal;
     }
 
     div.contrastcheck.contrastbottom.contrastwhite {
         background-color: white;
-        margin-right: 0;
-        width: 50%;
-        height: 200px;
+        margin-left: 0;
+        width: 100%;
+        height: 50%;
         font-family: 'Bebas Neue';
         font-weight: normal;
     }
@@ -662,8 +663,8 @@
     div.contrastcheck.contrasttop.contrastblack {
         color: black;
         margin-left: 0;
-        width: 50%;
-        height: 200px;
+        width: 100%;
+        height: 50%;
         font-family: 'Bebas Neue';
         font-weight: normal;
     }
@@ -671,8 +672,8 @@
     div.contrastcheck.contrastbottom.contrastblack {
         background-color: black;
         margin-right: 0;
-        width: 50%;
-        height: 200px;
+        width: 100%;
+        height: 50%;
         font-family: 'Bebas Neue';
         font-weight: normal;
     }
