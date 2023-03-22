@@ -82,7 +82,7 @@
         flex-wrap: wrap;
     }
 
-    input[type="button"] {
+    input[type="submit"] {
         width: fit-content;
         height: 39px;
         border-radius: 30px;
@@ -416,7 +416,7 @@
         flex-direction: row;
     }
 
-    input[type="button"] {
+    input[type="submit"] {
         width: 49%;
         height: 75px;
         border-radius: 30px;
