@@ -19,5 +19,5 @@ function checkContrast(color) {
     const whiteContrastBox = document.querySelector("#contrastWhite")
     const blackContrastBox = document.querySelector("#contrastblack")
     whiteContrastBox.textContent = contrastIndex.toFixed(1)
-    blackContrastBox.textContent = "ON A SCALE FROM -100 TO 100"
+    blackContrastBox.innerHTML = "ON A SCALE FROM -100 TO 100 <span id='contrastvalueblack'>Based on calculations made by the Contrast Calculator Engine</span>";
 }
