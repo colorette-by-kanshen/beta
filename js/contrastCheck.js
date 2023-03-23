@@ -1,6 +1,6 @@
 function checkContrast(color) {
-    const defaultColorContrastBox = document.querySelectorAll(".contrastcheck.contrasttop");
-    Array.from(defaultColorContrastBox).forEach(box => box.style.backgroundColor = color);
+    const ColorContrastBox = document.querySelectorAll("#contrastwhite, #contrastblack");
+    Array.from(ColorContrastBox).forEach(box => box.style.color = color);
 
     // Convert the input color to its RGB components
     const redHEX = color.substring(0, 2);

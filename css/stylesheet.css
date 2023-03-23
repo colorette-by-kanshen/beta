@@ -642,45 +642,21 @@
     div#contrastcheckbox>div#contrastwhite,
     div#contrastcheckbox>div#contrastblack {
         display: flex;
-        width: 50%;
+        width: 100%;
         border: 3px solid #F0F0F0;
         flex-direction: column;
-        height: 100%;
-    }
-
-    div.contrastcheck.contrasttop.contrastwhite {
-        color: white;
-        margin-left: 0;
-        width: 100%;
         height: 50%;
-        font-family: 'Bebas Neue';
-        font-weight: normal;
     }
 
-    div.contrastcheck.contrastbottom.contrastwhite {
+    div#contrastcheckbox>div#contrastwhite {
         background-color: white;
-        margin-left: 0;
-        width: 100%;
-        height: 50%;
-        font-family: 'Bebas Neue';
-        font-weight: normal;
+        -webkit-text-stroke: 4px black;
+        text-stroke: 4px black;
     }
 
-    div.contrastcheck.contrasttop.contrastblack {
-        color: black;
-        margin-right: 0;
-        width: 100%;
-        height: 50%;
-        font-family: 'Bebas Neue';
-        font-weight: normal;
-    }
-
-    div.contrastcheck.contrastbottom.contrastblack {
+    div#contrastcheckbox>div#contrastblack {
         background-color: black;
-        margin-right: 0;
-        width: 100%;
-        height: 50%;
-        font-family: 'Bebas Neue';
-        font-weight: normal;
+        -webkit-text-stroke: 4px white;
+        text-stroke: 4px white;
     }
 }
