@@ -304,14 +304,22 @@
 
     div#contrastcheckbox>div#contrastwhite {
         background-color: white;
-        -webkit-text-stroke: 4px black;
+        -webkit-text-stroke: 2px black;
         text-stroke: 4px black;
+        font-size: 150px;
+        font-family: "Bebas Neue";
+        text-align: center;
+        justify-content: end;
     }
 
     div#contrastcheckbox>div#contrastblack {
         background-color: black;
         -webkit-text-stroke: 4px white;
         text-stroke: 4px white;
+        font-size: 100px;
+        font-family: "Bebas Neue";
+        text-align: center;
+        justify-content: center;
     }
 }
 
