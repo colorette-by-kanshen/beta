@@ -288,52 +288,30 @@
         justify-content: center;
         width: fit-content;
         min-width: 90%;
-        height: 400px;
+        margin-right: auto;
+        margin-left: auto;
+        flex-direction: column;
     }
 
     div#contrastcheckbox>div#contrastwhite,
     div#contrastcheckbox>div#contrastblack {
         display: flex;
+        width: 100%;
         border: 3px solid #F0F0F0;
-        width: 50%;
         flex-direction: column;
-        height: 100%;
-    }
-
-    div.contrastcheck.contrasttop.contrastwhite {
-        color: white;
-        margin-left: 0;
-        width: 100%;
         height: 50%;
-        font-family: 'Bebas Neue';
-        font-weight: normal;
     }
 
-    div.contrastcheck.contrastbottom.contrastwhite {
+    div#contrastcheckbox>div#contrastwhite {
         background-color: white;
-        margin-right: 0;
-        width: 100%;
-        height: 50%;
-        font-family: 'Bebas Neue';
-        font-weight: normal;
+        -webkit-text-stroke: 4px black;
+        text-stroke: 4px black;
     }
 
-    div.contrastcheck.contrasttop.contrastblack {
-        color: black;
-        margin-left: 0;
-        width: 100%;
-        height: 50%;
-        font-family: 'Bebas Neue';
-        font-weight: normal;
-    }
-
-    div.contrastcheck.contrastbottom.contrastblack {
+    div#contrastcheckbox>div#contrastblack {
         background-color: black;
-        margin-right: 0;
-        width: 100%;
-        height: 50%;
-        font-family: 'Bebas Neue';
-        font-weight: normal;
+        -webkit-text-stroke: 4px white;
+        text-stroke: 4px white;
     }
 }
 
@@ -623,40 +601,5 @@
 
     credits>a:hover {
         text-decoration: underline;
-    }
-
-    div#contrastcheckbox {
-        display: none;
-        border: 3px solid #F0F0F0;
-        border-radius: 10px;
-        max-width: 100%;
-        margin: 25px auto;
-        justify-content: center;
-        width: fit-content;
-        min-width: 90%;
-        margin-right: auto;
-        margin-left: auto;
-        flex-direction: column;
-    }
-
-    div#contrastcheckbox>div#contrastwhite,
-    div#contrastcheckbox>div#contrastblack {
-        display: flex;
-        width: 100%;
-        border: 3px solid #F0F0F0;
-        flex-direction: column;
-        height: 50%;
-    }
-
-    div#contrastcheckbox>div#contrastwhite {
-        background-color: white;
-        -webkit-text-stroke: 4px black;
-        text-stroke: 4px black;
-    }
-
-    div#contrastcheckbox>div#contrastblack {
-        background-color: black;
-        -webkit-text-stroke: 4px white;
-        text-stroke: 4px white;
     }
 }
