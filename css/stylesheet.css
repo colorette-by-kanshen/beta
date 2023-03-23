@@ -291,12 +291,12 @@
         margin-right: auto;
         margin-left: auto;
         flex-direction: column;
+        height: 400px;
     }
 
     div#contrastcheckbox>div#contrastwhite,
     div#contrastcheckbox>div#contrastblack {
         display: flex;
-        width: 100%;
         border: 3px solid #F0F0F0;
         flex-direction: column;
         height: 50%;
