@@ -326,6 +326,7 @@
         font-size: 25;
         -webkit-text-stroke: 1px white;
         text-stroke: 1px white;
+        display: block;
     }
 }
 
