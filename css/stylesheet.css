@@ -636,7 +636,7 @@
         min-width: 90%;
         margin-right: auto;
         margin-left: auto;
-        flex-direction: row;
+        flex-direction: column;
     }
 
     div#contrastcheckbox>div#contrastwhite,
