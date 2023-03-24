@@ -298,7 +298,8 @@
         display: flex;
         border: 3px solid #F0F0F0;
         flex-direction: column;
-        height: 200px;
+        min-height: 200px;
+        height: fit-content;
     }
 
     div#contrastcheckbox>div#contrastwhite {
