@@ -358,6 +358,8 @@
 
     label.switch {
     background-color: #F0F0F0;
+    margin: auto;
+    padding: 5px;
     }
 
     /* The switch - the box around the slider */
