@@ -41,7 +41,7 @@ function checkContrast(color) {
     } else if (75.5 <= contrastIndex <= 100) {
         contrastInfo.innerHTML = "The color <span id='contrastcheckcolorcode'></span> has the contrast index of " + contrastIndex + ", which means the color is great to see on black, but very hard, if not impossible to see on white.";
     }
-    const contrastColor = document.querySelectorById("contrastcheckcolorcode");
+    const contrastColor = document.querySelector("span#contrastcheckcolorcode");
     contrastColor.style.color = color;
     contrastColor.textContent = "#" + color;
 }
