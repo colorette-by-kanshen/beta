@@ -330,11 +330,31 @@
     }
 
     div#contrastcheckbox>span#contrastchecktitle {
-    padding: 10;
-    font-family: "Vegur";
-    text-align: center;
-    background-color: #F0F0F0;
-}
+        padding: 10;
+        font-family: "Vegur";
+        text-align: center;
+        background-color: #F0F0F0;
+    }
+
+    div#contrastcheckbox>span#contrastcheckdescription {
+        padding: 10;
+        font-family: "Vegur";
+        background-color: #F0F0F0;
+    }
+
+    div#contrastcheckbox>span#contrastcheckcolorinfo {
+        padding: 10;
+        font-family: "Vegur";
+        background-color: #F0F0F0;
+    }
+
+    div#contrastcheckbox>span#contrastcheckcolorinfo>span#contrastcheckcolorcode {
+        padding: 10;
+        font-family: "Vegur";
+        background-color: #F0F0F0;
+        -webkit-text-stroke: 1px black;
+        text-stroke: 1px black;
+    }
 }
 
 @media (orientation: portrait) {
