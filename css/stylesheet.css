@@ -328,6 +328,12 @@
         text-stroke: 1px white;
         display: block;
     }
+
+    div#contrastcheckbox>span#contrastchecktitle {
+    padding: 10;
+    font-family: "Vegur";
+    text-align: center;
+}
 }
 
 @media (orientation: portrait) {
