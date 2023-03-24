@@ -283,15 +283,14 @@
         display: none;
         border: 3px solid #F0F0F0;
         border-radius: 10px;
-        max-width: 100%;
         margin: 25px auto;
         justify-content: center;
         width: fit-content;
-        min-width: 90%;
+        width: 90%;
         margin-right: auto;
         margin-left: auto;
         flex-direction: column;
-        height: 400px;
+        height: fit-content;
     }
 
     div#contrastcheckbox>div#contrastwhite,
@@ -299,7 +298,7 @@
         display: flex;
         border: 3px solid #F0F0F0;
         flex-direction: column;
-        height: 50%;
+        height: 200px;
     }
 
     div#contrastcheckbox>div#contrastwhite {
