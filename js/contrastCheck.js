@@ -30,7 +30,7 @@ function checkContrast(color) {
         contrastInfo.innerHTML = "The color <span id='contrastcheckcolorcode'></span> has the contrast index of " + contrastIndex.toFixed(1) + ", which means the color is good to see on white, but a bit less on black.";
     } else if (-32.5 >= contrastIndex && contrastIndex < -10) {
         contrastInfo.innerHTML = "The color <span id='contrastcheckcolorcode'></span> has the contrast index of " + contrastIndex.toFixed(1) + ", which means the color is good to see on white, and only a bit less on black.";
-    } else if (-10 >= contrastIndex && contrastIndex <= 10) {
+    } else if (-10 <= contrastIndex && contrastIndex <= 10) {
         contrastInfo.innerHTML = "The color <span id='contrastcheckcolorcode'></span> has the contrast index of " + contrastIndex.toFixed(1) + ", which means the color is neutral, and is pretty easy to see on both white and black.";
     } else if (10 < contrastIndex && contrastIndex <= 32.5) {
         contrastInfo.innerHTML = "The color <span id='contrastcheckcolorcode'></span> has the contrast index of " + contrastIndex.toFixed(1) + ", which means the color is good to see on black, and only a bit less on white.";
