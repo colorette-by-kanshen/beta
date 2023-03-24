@@ -22,23 +22,23 @@ function checkContrast(color) {
     blackContrastBox.innerHTML = "ON A SCALE FROM -100 TO 100 <span id='contrastvalueblack'>Based on calculations made by the Contrast Calculator Engine</span>";
 
     const contrastInfo = document.querySelector("#contrastcheckcolorinfo");
-    if (-100 >= contrastIndex < -77.5) {
+    if (-100 >= contrastIndex && contrastIndex < -77.5) {
         contrastInfo.innerHTML = "The color <span id='contrastcheckcolorcode'></span> has the contrast index of " + contrastIndex.toFixed(1) + ", which means the color is great to see on white, but very hard, if not impossible to see on black.";
-    } else if (-77.5 >= contrastIndex < -55) {
+    } else if (-77.5 >= contrastIndex && contrastIndex < -55) {
         contrastInfo.innerHTML = "The color <span id='contrastcheckcolorcode'></span> has the contrast index of " + contrastIndex.toFixed(1) + ", which means the color is good to see on white, but it might be difficult to see on black.";
-    } else if (-55 >= contrastIndex < -32.5) {
+    } else if (-55 >= contrastIndex && contrastIndex < -32.5) {
         contrastInfo.innerHTML = "The color <span id='contrastcheckcolorcode'></span> has the contrast index of " + contrastIndex.toFixed(1) + ", which means the color is good to see on white, but a bit less on black.";
-    } else if (-32.5 >= contrastIndex < -10) {
+    } else if (-32.5 >= contrastIndex && contrastIndex < -10) {
         contrastInfo.innerHTML = "The color <span id='contrastcheckcolorcode'></span> has the contrast index of " + contrastIndex.toFixed(1) + ", which means the color is good to see on white, and only a bit less on black.";
-    } else if (-10 >= contrastIndex <= 10) {
+    } else if (-10 >= contrastIndex && contrastIndex <= 10) {
         contrastInfo.innerHTML = "The color <span id='contrastcheckcolorcode'></span> has the contrast index of " + contrastIndex.toFixed(1) + ", which means the color is neutral, and is pretty easy to see on both white and black.";
-    } else if (10 > contrastIndex <= 32.5) {
+    } else if (10 > contrastIndex && contrastIndex <= 32.5) {
         contrastInfo.innerHTML = "The color <span id='contrastcheckcolorcode'></span> has the contrast index of " + contrastIndex.toFixed(1) + ", which means the color is good to see on black, and only a bit less on white.";
-    } else if (32.5 > contrastIndex <= 55) {
+    } else if (32.5 > contrastIndex && contrastIndex <= 55) {
         contrastInfo.innerHTML = "The color <span id='contrastcheckcolorcode'></span> has the contrast index of " + contrastIndex.toFixed(1) + ", which means the color is good to see on black, but a bit less on white.";
-    } else if (55 > contrastIndex <= 75.5) {
+    } else if (55 > contrastIndex && contrastIndex <= 75.5) {
         contrastInfo.innerHTML = "The color <span id='contrastcheckcolorcode'></span> has the contrast index of " + contrastIndex.toFixed(1) + ", which means the color is good to see on black, but it might be difficult to see on white.";
-    } else if (75.5 > contrastIndex <= 100) {
+    } else if (75.5 > contrastIndex && contrastIndex <= 100) {
         contrastInfo.innerHTML = "The color <span id='contrastcheckcolorcode'></span> has the contrast index of " + contrastIndex.toFixed(1) + ", which means the color is great to see on black, but very hard, if not impossible to see on white.";
     }
     const contrastColor = document.querySelector("span#contrastcheckcolorcode");
