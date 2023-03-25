@@ -45,6 +45,15 @@ function checkContrast(color) {
     contrastColor.textContent = "#" + color;
 }
 
+function switchContrastContents() {
+    const contrastContents = document.querySelector("div#contrastcontents")
+    if (contrastContents.style.display == "none") {
+        contrastContents.style.display == "block"
+    } else if (contrastContents.style.display == "block") {
+        contrastContents.style.display == "none"
+    }
+}
+
 const toggleSwitch = document.querySelector('input[type=checkbox]');
 const contrastWhite = document.querySelector('div#contrastwhite');
 const contrastBlack = document.querySelector('div#contrastblack');
