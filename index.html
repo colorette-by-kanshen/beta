@@ -11,51 +11,6 @@
             <img src="img/logo-white.png" id="logo">
         </div>
     </header>
-    <scripts>
-        <script src="js/changeTheme.js"></script>
-        <script src="js/contrastCheck.js"></script>
-        <script src="js/setColor.js"></script>
-        <script src="js/checkColor.js"></script>
-        <script src="js/formCheck.js"></script>
-        <script src="js/getColorBrightness.js"></script>
-        <script src="js/generatePalette.js"></script>
-        <script src="js/embed.js"></script>
-        <script>
-            window.addEventListener('load', checkColor);
-        </script>
-        <script src="js/randomizeColor.js"></script>
-        <script>
-            function setColorsDisplay() {
-                const hexElements = document.querySelectorAll('.maincolorpallettebox .hex');
-                const rgbElements = document.querySelectorAll('.maincolorpallettebox .rgb');
-
-                if (window.innerWidth <= 630) {
-                    hexElements.forEach(element => {
-                        element.style.display = 'none';
-                    });
-                } else {
-                    hexElements.forEach(element => {
-                        element.style.display = 'block';
-                    });
-                }
-
-                if (window.innerWidth <= 300) {
-                    rgbElements.forEach(element => {
-                        element.style.display = 'none';
-                    });
-                } else {
-                    rgbElements.forEach(element => {
-                        element.style.display = 'grid';
-                    });
-                }
-            }
-
-            setColorsDisplay();
-            window.addEventListener('resize', setColorsDisplay);
-
-
-        </script>
-    </scripts>
 </head>
 
 <body>
@@ -223,6 +178,51 @@
 </body>
 <footer>
     <credits><a href="https://kanshen.click">© Created by Richard Kanshen 2023</a></credits>
+    <scripts>
+        <script src="js/changeTheme.js"></script>
+        <script src="js/contrastCheck.js"></script>
+        <script src="js/setColor.js"></script>
+        <script src="js/checkColor.js"></script>
+        <script src="js/formCheck.js"></script>
+        <script src="js/getColorBrightness.js"></script>
+        <script src="js/generatePalette.js"></script>
+        <script src="js/embed.js"></script>
+        <script>
+            window.addEventListener('load', checkColor);
+        </script>
+        <script src="js/randomizeColor.js"></script>
+        <script>
+            function setColorsDisplay() {
+                const hexElements = document.querySelectorAll('.maincolorpallettebox .hex');
+                const rgbElements = document.querySelectorAll('.maincolorpallettebox .rgb');
+
+                if (window.innerWidth <= 630) {
+                    hexElements.forEach(element => {
+                        element.style.display = 'none';
+                    });
+                } else {
+                    hexElements.forEach(element => {
+                        element.style.display = 'block';
+                    });
+                }
+
+                if (window.innerWidth <= 300) {
+                    rgbElements.forEach(element => {
+                        element.style.display = 'none';
+                    });
+                } else {
+                    rgbElements.forEach(element => {
+                        element.style.display = 'grid';
+                    });
+                }
+            }
+
+            setColorsDisplay();
+            window.addEventListener('resize', setColorsDisplay);
+
+
+        </script>
+    </scripts>
 </footer>
 
 </html>
