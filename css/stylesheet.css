@@ -293,8 +293,8 @@
         height: fit-content;
     }
 
-    div#contrastcheckbox>div#contrastwhite,
-    div#contrastcheckbox>div#contrastblack {
+    div#contrastcheckbox>div#contrastcontents>div#contrastwhite,
+    div#contrastcheckbox>div#contrastcontents>div#contrastblack {
         display: flex;
         border: 3px solid #F0F0F0;
         flex-direction: column;
@@ -302,7 +302,7 @@
         height: fit-content;
     }
 
-    div#contrastcheckbox>div#contrastwhite {
+    div#contrastcheckbox>div#contrastcontents>div#contrastwhite {
         background-color: white;
         -webkit-text-stroke: 2px black;
         text-stroke: 2px black;
@@ -315,7 +315,7 @@
         transition-property: all;
     }
 
-    div#contrastcheckbox>div#contrastblack {
+    div#contrastcheckbox>div#contrastcontents>div#contrastblack {
         background-color: black;
         -webkit-text-stroke: 3px white;
         text-stroke: 3px white;
@@ -328,7 +328,7 @@
         transition-property: all;
     }
 
-    div#contrastcheckbox>div#contrastblack>span {
+    div#contrastcheckbox>div#contrastcontents>div#contrastblack>span {
         font-size: 25;
         -webkit-text-stroke: 1px white;
         text-stroke: 1px white;
@@ -345,19 +345,19 @@
         background-color: #F0F0F0;
     }
 
-    div#contrastcheckbox>span#contrastcheckdescription {
+    div#contrastcheckbox>div#contrastcontents>span#contrastcheckdescription {
         padding: 10;
         font-family: "Vegur";
         background-color: #F0F0F0;
     }
 
-    div#contrastcheckbox>span#contrastcheckcolorinfo {
+    div#contrastcheckbox>div#contrastcontents>span#contrastcheckcolorinfo {
         padding: 10;
         font-family: "Vegur";
         background-color: #F0F0F0;
     }
 
-    div#contrastcheckbox>span#contrastcheckcolorinfo>span#contrastcheckcolorcode {
+    div#contrastcheckbox>div#contrastcontents>span#contrastcheckcolorinfo>span#contrastcheckcolorcode {
         padding: 0;
         font-family: "Vegur";
         background-color: #F0F0F0;
