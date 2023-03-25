@@ -37,9 +37,9 @@ function updateLogoColor(color) {
 }
 
 function updateToggleSwitch(color) {
-  var toggleSwitchInput = document.querySelector("input[type=checkbox]")
-  var toggleSwitch = document.querySelector("input>span.slider.round")
-  var toggleSwitchButton = document.querySelector("span#slidercircle")
+  const toggleSwitchInput = document.querySelector("input[type=checkbox]")
+  const toggleSwitch = document.querySelector("input>span.slider.round")
+  const toggleSwitchButton = document.querySelector("span#slidercircle")
 
   var r = parseInt(color.substring(0, 2), 16);
   var g = parseInt(color.substring(2, 4), 16);
