@@ -37,8 +37,8 @@ function updateLogoColor(color) {
 }
 
 function updateToggleSwitch(color) {
-  var toggleSwitchAfter = document.querySelector("input:checked+.slider")
-  var toggleSwitchButton = document.querySelector(".slider:before")
+  var toggleSwitchAfter = document.querySelector("input && :checked+ && .slider")
+  var toggleSwitchButton = document.querySelector(".slider && :before")
 
   var r = parseInt(color.substring(0, 2), 16);
   var g = parseInt(color.substring(2, 4), 16);
@@ -46,10 +46,10 @@ function updateToggleSwitch(color) {
 
   if (r >= 150 && g >= 150 && b >= 150) {
     // set logo to black version and header background to black
-    toggleSwitchButton.backgroundColor = "#000000"
+    toggleSwitchButton.style.backgroundColor = "#000000"
   } else {
     // set logo to white version and header background to white
-    toggleSwitchButton.backgroundColor = "#FFFFFF"
+    toggleSwitchButton.style.backgroundColor = "#FFFFFF"
   }
-  toggleSwitchAfter.backgroundColor = color
+  toggleSwitchAfter.style.backgroundColor = color
 }
