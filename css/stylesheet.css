@@ -357,8 +357,8 @@
     }
 
     label.switch {
-    background-color: #F0F0F0;
-    margin: auto;
+        background-color: #F0F0F0;
+        margin: auto;
     }
 
     /* The switch - the box around the slider */
@@ -422,6 +422,26 @@
 
     .slider.round:before {
         border-radius: 50%;
+    }
+
+    div#contrastoutlineswitch {
+        background-color: #F0F0F0;
+        margin: auto;
+        width: 100%;
+        padding-top: 5;
+        padding-bottom: 5;
+        justify-content: center;
+        display: flex;
+        align-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    span#outlineswitchtitle {
+        margin-bottom: 10;
+        margin-top: 5;
+        font-family: 'Vegur';
+        font-size: 12;
     }
 }
 
