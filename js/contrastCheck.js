@@ -62,8 +62,8 @@ toggleSwitch.addEventListener('change', function () {
         contrastWhite.style.webkitTextStrokeWidth = '0px';
         contrastBlack.style.webkitTextStrokeWidth = '0px';
         contrastValueInfo.style.webkitTextStrokeWidth = '0px';
-        contrastWhite.style.webkitTextStrokeColor = 'black';
-        contrastBlack.style.webkitTextStrokeColor = 'white';
-        contrastValueInfo.style.webkitTextStrokeColor = 'white'
+        contrastWhite.style.webkitTextStrokeColor = 'transparent';
+        contrastBlack.style.webkitTextStrokeColor = 'transparent';
+        contrastValueInfo.style.webkitTextStrokeColor = 'transparent'
     }
 });
