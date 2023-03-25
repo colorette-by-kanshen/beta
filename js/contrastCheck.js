@@ -45,3 +45,20 @@ function checkContrast(color) {
     contrastColor.style.color = color;
     contrastColor.textContent = "#" + color;
 }
+
+const toggleSwitch = document.querySelector('input[type=checkbox]');
+const contrastWhite = document.querySelector('div#contrastwhite');
+const contrastBlack = document.querySelector('div#contrastblack');
+const contrastValueBlack = document.querySelector('div#contrastblack>span#contrastvalueblack');
+
+toggleSwitch.addEventListener('change', function () {
+    if (this.checked) {
+        contrastWhite.style.webkitTextStroke = '2px';
+        contrastBlack.style.webkitTextStroke = '2px';
+        contrastValueBlack.style.webkitTextStroke = '1px';
+    } else {
+        contrastWhite.style.webkitTextStroke = '0px';
+        contrastBlack.style.webkitTextStroke = '0px';
+        contrastValueBlack.style.webkitTextStroke = '0px';
+    }
+});
