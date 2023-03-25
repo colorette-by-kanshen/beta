@@ -310,6 +310,8 @@
         font-family: "Bebas Neue";
         text-align: center;
         justify-content: end;
+        transition: ease-in-out;
+        transition-duration: 0.5s;
     }
 
     div#contrastcheckbox>div#contrastblack {
@@ -320,6 +322,8 @@
         font-family: "Bebas Neue";
         text-align: center;
         justify-content: center;
+        transition: ease-in-out;
+        transition-duration: 0.5s;
     }
 
     div#contrastcheckbox>div#contrastblack>span {
@@ -327,6 +331,8 @@
         -webkit-text-stroke: 1px white;
         text-stroke: 1px white;
         display: block;
+        transition: ease-in-out;
+        transition-duration: 0.5s;
     }
 
     div#contrastcheckbox>span#contrastchecktitle {
