@@ -50,5 +50,5 @@ function updateToggleSwitch(color) {
     // set logo to white version and header background to white
     toggleSwitchButton.style.backgroundColor = "#FFFFFF"
   }
-  toggleswitchcss.innerHTML = 'input:checked+.slider {background - color: #' + color + ';} input: focus +.slider {box - shadow: 0 0 1px #' + color + ';}'
+  toggleswitchcss.innerHTML = 'input:checked+.slider {background-color: #' + color + ';} input:focus+.slider {box-shadow: 0 0 1px #' + color + ';}'
 }
