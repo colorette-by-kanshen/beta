@@ -46,10 +46,10 @@ function updateToggleSwitch(color) {
 
   if (r >= 150 && g >= 150 && b >= 150) {
     // set logo to black version and header background to black
-    toggleSwitchButton.style.backgroundColor = "#000000"
+    toggleSwitchButton.backgroundColor = "#000000"
   } else {
     // set logo to white version and header background to white
-    toggleSwitchButton.style.backgroundColor = "#FFFFFF"
+    toggleSwitchButton.backgroundColor = "#FFFFFF"
   }
-  toggleSwitchAfter.style.backgroundColor = color
+  toggleSwitchAfter.backgroundColor = color
 }
