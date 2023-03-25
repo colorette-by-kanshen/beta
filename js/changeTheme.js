@@ -33,6 +33,7 @@ function updateLogoColor(color) {
     header.style.backgroundColor = "#FFFFFF";
     formField.style.color = "#FFFFFF"
   }
+  updateToggleSwitch(color)
 }
 
 function updateToggleSwitch(color) {
