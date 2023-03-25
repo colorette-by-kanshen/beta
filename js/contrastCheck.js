@@ -59,9 +59,9 @@ toggleSwitch.addEventListener('change', function () {
         contrastBlack.style.webkitTextStrokeColor = 'white';
         contrastValueInfo.style.webkitTextStrokeColor = 'white'
     } else {
-        contrastWhite.style.webkitTextStrokeWidth = '0px';
-        contrastBlack.style.webkitTextStrokeWidth = '0px';
-        contrastValueInfo.style.webkitTextStrokeWidth = '0px';
+        contrastWhite.style.webkitTextStrokeWidth = '2px';
+        contrastBlack.style.webkitTextStrokeWidth = '2px';
+        contrastValueInfo.style.webkitTextStrokeWidth = '1px';
         contrastWhite.style.webkitTextStrokeColor = 'transparent';
         contrastBlack.style.webkitTextStrokeColor = 'transparent';
         contrastValueInfo.style.webkitTextStrokeColor = 'transparent'
