@@ -49,7 +49,7 @@ function checkContrast(color) {
 const toggleSwitch = document.querySelector('input[type=checkbox]');
 const contrastWhite = document.querySelector('div#contrastwhite');
 const contrastBlack = document.querySelector('div#contrastblack');
-const contrastValueInfo = contrastBlack.querySelector('span');
+const contrastValueInfo = document.querySelector('div#contrastblack>span');
 
 toggleSwitch.addEventListener('change', function () {
     if (this.checked) {
