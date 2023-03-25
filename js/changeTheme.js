@@ -37,7 +37,8 @@ function updateLogoColor(color) {
 }
 
 function updateToggleSwitch(color) {
-  var toggleSwitchAfter = document.querySelector("input:checked+>span.slider.round")
+  var toggleSwitchInput = document.querySelector("input[type=checkbox]")
+  var toggleSwitch = document.querySelector("input>span.slider.round")
   var toggleSwitchButton = document.querySelector("span#slidercircle")
 
   var r = parseInt(color.substring(0, 2), 16);
@@ -51,5 +52,9 @@ function updateToggleSwitch(color) {
     // set logo to white version and header background to white
     toggleSwitchButton.style.backgroundColor = "#FFFFFF"
   }
-  toggleSwitchAfter.style.backgroundColor = color
+  if (toggleSwitchInput.checked) {
+    toggleSwitch.style.backgroundColor = color
+  } else {
+    toggleSwitch.style.backgroundColor = "#CCCCCC"
+  }
 }
