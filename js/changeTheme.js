@@ -37,7 +37,7 @@ function updateLogoColor(color) {
 }
 
 function updateToggleSwitch(color) {
-  var toggleSwitchAfter = document.querySelector("span.slider.round")
+  var toggleSwitchAfter = document.querySelector("span.slider.round:checked+")
   var toggleSwitchButton = document.querySelector("span#slidercircle")
 
   var r = parseInt(color.substring(0, 2), 16);
