@@ -311,7 +311,7 @@
         text-align: center;
         justify-content: end;
         transition: ease-in-out;
-        transition-duration: 0.5s;
+        transition-duration: 0.3s;
         transition-property: all;
     }
 
@@ -324,7 +324,7 @@
         text-align: center;
         justify-content: center;
         transition: ease-in-out;
-        transition-duration: 0.5s;
+        transition-duration: 0.3s;
         transition-property: all;
     }
 
@@ -334,7 +334,7 @@
         text-stroke: 1px white;
         display: block;
         transition: ease-in-out;
-        transition-duration: 0.5s;
+        transition-duration: 0.3s;
         transition-property: all;
     }
 
