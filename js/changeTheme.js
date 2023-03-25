@@ -38,7 +38,7 @@ function updateLogoColor(color) {
 
 function updateToggleSwitch(color) {
   const toggleSwitchButton = document.querySelector("span#slidercircle")
-
+  const toggleswitchcss = document.querySelector("#contrastcheckboxstyle")
   var r = parseInt(color.substring(0, 2), 16);
   var g = parseInt(color.substring(2, 4), 16);
   var b = parseInt(color.substring(4, 6), 16);
@@ -50,4 +50,5 @@ function updateToggleSwitch(color) {
     // set logo to white version and header background to white
     toggleSwitchButton.style.backgroundColor = "#FFFFFF"
   }
+  toggleswitchcss.innerHTML = 'input:checked+.slider {background - color: #' + color + ';} input: focus +.slider {box - shadow: 0 0 1px #' + color + ';}'
 }
