@@ -49,22 +49,22 @@ function checkContrast(color) {
 const toggleSwitch = document.querySelector('input[type=checkbox]');
 const contrastWhite = document.querySelector('div#contrastwhite');
 const contrastBlack = document.querySelector('div#contrastblack');
-const contrastValueBlack = document.querySelector('span#contrastvalueinfo');
+const contrastValueInfo = document.querySelector('span#contrastvalueinfo');
 
 toggleSwitch.addEventListener('change', function () {
     if (this.checked) {
         contrastWhite.style.webkitTextStrokeWidth = '2px';
         contrastBlack.style.webkitTextStrokeWidth = '2px';
-        contrastValueBlack.style.webkitTextStrokeWidth = '1px';
+        contrastValueInfo.style.webkitTextStrokeWidth = '1px';
         contrastWhite.style.webkitTextStrokeColor = 'black';
         contrastBlack.style.webkitTextStrokeColor = 'white';
-        contrastValueBlack.style.webkitTextStrokeColor = 'white'
+        contrastValueInfo.style.webkitTextStrokeColor = 'white'
     } else {
         contrastWhite.style.webkitTextStrokeWidth = '0px';
         contrastBlack.style.webkitTextStrokeWidth = '0px';
-        contrastValueBlack.style.webkitTextStrokeWidth = '0px';
+        contrastValueInfo.style.webkitTextStrokeWidth = '0px';
         contrastWhite.style.webkitTextStrokeColor = 'black';
         contrastBlack.style.webkitTextStrokeColor = 'white';
-        contrastValueBlack.style.webkitTextStrokeColor = 'white'
+        contrastValueInfo.style.webkitTextStrokeColor = 'white'
     }
 });
