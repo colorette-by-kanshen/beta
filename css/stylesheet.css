@@ -356,6 +356,7 @@
         padding: 10;
         font-family: "Vegur";
         background-color: #F0F0F0;
+        display: block;
     }
 
     div#contrastcheckbox>div#contrastcontents>span#contrastcheckcolorinfo>span#contrastcheckcolorcode {
