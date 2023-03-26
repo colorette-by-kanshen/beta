@@ -17,9 +17,11 @@ function checkColor() {
     document.getElementById('color9').style.display = "flex";
     document.getElementById('color10').style.display = "flex";
     document.getElementById('maincolorpalletteholder').style.display = "flex";
+    document.getElementById('contrastcheckbox').style.display = "flex";
     getColorBrightness(color);
-  }
+    checkContrast(color)
+  };
   if (random === "true") {
     document.getElementById("randomcolorinfo").style.display = "block";
-  }
+  };
 }

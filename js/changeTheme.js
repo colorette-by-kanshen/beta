@@ -14,7 +14,6 @@ function updateLogoColor(color) {
   var logo = document.getElementById("logo");
   var header = document.querySelector("header");
 
-  formField.value = color;
   formField.style.background = "#" + color;
   logo.style.background = "#" + color;
 
@@ -34,4 +33,22 @@ function updateLogoColor(color) {
     header.style.backgroundColor = "#FFFFFF";
     formField.style.color = "#FFFFFF"
   }
+  updateToggleSwitch(color)
+}
+
+function updateToggleSwitch(color) {
+  const toggleSwitchButton = document.querySelector("span#slidercircle")
+  const toggleswitchcss = document.querySelector("#contrastcheckboxstyle")
+  var r = parseInt(color.substring(0, 2), 16);
+  var g = parseInt(color.substring(2, 4), 16);
+  var b = parseInt(color.substring(4, 6), 16);
+
+  if (r >= 150 && g >= 150 && b >= 150) {
+    // set logo to black version and header background to black
+    toggleSwitchButton.style.backgroundColor = "#000000"
+  } else {
+    // set logo to white version and header background to white
+    toggleSwitchButton.style.backgroundColor = "#FFFFFF"
+  }
+  toggleswitchcss.innerHTML = 'input:checked+.slider {background-color: #' + color + ';} input:focus+.slider {box-shadow: 0 0 1px #' + color + ';}'
 }

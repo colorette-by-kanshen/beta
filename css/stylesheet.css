@@ -82,7 +82,7 @@
         flex-wrap: wrap;
     }
 
-    input[type="button"] {
+    input[type="submit"] {
         width: fit-content;
         height: 39px;
         border-radius: 30px;
@@ -278,6 +278,183 @@
     credits>a:hover {
         text-decoration: underline;
     }
+
+    div#contrastcheckbox {
+        display: none;
+        border: 3px solid #F0F0F0;
+        border-radius: 10px;
+        margin: 25px auto;
+        justify-content: center;
+        width: fit-content;
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    div#contrastcheckbox>div#contrastcontents>div#contrastwhite,
+    div#contrastcheckbox>div#contrastcontents>div#contrastblack {
+        display: flex;
+        border: 3px solid #F0F0F0;
+        flex-direction: column;
+        min-height: 200px;
+        height: fit-content;
+    }
+
+    div#contrastcheckbox>div#contrastcontents>div#contrastwhite {
+        background-color: white;
+        -webkit-text-stroke: 2px black;
+        text-stroke: 2px black;
+        font-size: 150px;
+        font-family: "Bebas Neue";
+        text-align: center;
+        justify-content: end;
+        transition: ease-in-out;
+        transition-duration: 0.3s;
+        transition-property: all;
+    }
+
+    div#contrastcheckbox>div#contrastcontents>div#contrastblack {
+        background-color: black;
+        -webkit-text-stroke: 3px white;
+        text-stroke: 3px white;
+        font-size: 100px;
+        font-family: "Bebas Neue";
+        text-align: center;
+        justify-content: center;
+        transition: ease-in-out;
+        transition-duration: 0.3s;
+        transition-property: all;
+    }
+
+    div#contrastcheckbox>div#contrastcontents>div#contrastblack>span {
+        font-size: 25;
+        -webkit-text-stroke: 1px white;
+        text-stroke: 1px white;
+        display: block;
+        transition: ease-in-out;
+        transition-duration: 0.3s;
+        transition-property: all;
+    }
+
+    div#contrastcheckbox>span#contrastchecktitle {
+        padding: 10;
+        font-family: "Vegur";
+        text-align: center;
+        background-color: #F0F0F0;
+    }
+
+    div#contrastcheckbox>div#contrastcontents>span#contrastcheckdescription {
+        padding: 10;
+        font-family: "Vegur";
+        background-color: #F0F0F0;
+        display: block;
+    }
+
+    div#contrastcheckbox>div#contrastcontents>span#contrastcheckcolorinfo {
+        padding: 10;
+        font-family: "Vegur";
+        background-color: #F0F0F0;
+        display: block;
+    }
+
+    div#contrastcheckbox>div#contrastcontents>span#contrastcheckcolorinfo>span#contrastcheckcolorcode {
+        padding: 0;
+        font-family: "Vegur";
+        background-color: #F0F0F0;
+        -webkit-text-stroke: 0.4px black;
+        text-stroke: 0.4px black;
+    }
+
+    label.switch {
+        background-color: #F0F0F0;
+        margin: auto;
+        margin-bottom: 5px;
+    }
+
+    /* The switch - the box around the slider */
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+    }
+
+    /* Hide default HTML checkbox */
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    /* The slider */
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .3s;
+        transition: .3s;
+    }
+
+    .slider>#slidercircle {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .3s;
+        transition: .3s;
+    }
+
+    input:checked+.slider {
+        background-color: #6495ED;
+    }
+
+    input:focus+.slider {
+        box-shadow: 0 0 1px #6495ED;
+    }
+
+    input:checked+.slider>#slidercircle {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+    }
+
+    /* Rounded sliders */
+    .slider.round {
+        border-radius: 34px;
+    }
+
+    .slider.round>#slidercircle {
+        border-radius: 50%;
+    }
+
+    div#contrastoutlineswitch {
+        background-color: #F0F0F0;
+        margin: auto;
+        width: 100%;
+        padding-top: 5;
+        padding-bottom: 5;
+        justify-content: center;
+        display: flex;
+        align-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    span#outlineswitchtitle {
+        margin-bottom: 10;
+        margin-top: 5;
+        font-family: 'Vegur';
+        font-size: 12;
+    }
 }
 
 @media (orientation: portrait) {
@@ -359,7 +536,7 @@
         flex-direction: row;
     }
 
-    input[type="button"] {
+    input[type="submit"] {
         width: 49%;
         height: 75px;
         border-radius: 30px;
@@ -415,7 +592,6 @@
     .maincolorpallettebox {
         display: flex;
         height: 100px;
-        width: 100%;
         border: 3px solid #F0F0F0;
         color: #F0F0F0;
         position: relative;
@@ -567,5 +743,184 @@
 
     credits>a:hover {
         text-decoration: underline;
+    }
+
+    div#contrastcheckbox {
+        display: none;
+        border: 3px solid #F0F0F0;
+        border-radius: 10px;
+        margin: 25px auto;
+        justify-content: center;
+        width: fit-content;
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    div#contrastcheckbox>div#contrastcontents>div#contrastwhite,
+    div#contrastcheckbox>div#contrastcontents>div#contrastblack {
+        display: flex;
+        border: 3px solid #F0F0F0;
+        flex-direction: column;
+        min-height: 200px;
+        height: fit-content;
+    }
+
+    div#contrastcheckbox>div#contrastcontents>div#contrastwhite {
+        background-color: white;
+        -webkit-text-stroke: 2px black;
+        text-stroke: 2px black;
+        font-size: 150px;
+        font-family: "Bebas Neue";
+        text-align: center;
+        justify-content: end;
+        transition: ease-in-out;
+        transition-duration: 0.3s;
+        transition-property: all;
+    }
+
+    div#contrastcheckbox>div#contrastcontents>div#contrastblack {
+        background-color: black;
+        -webkit-text-stroke: 3px white;
+        text-stroke: 3px white;
+        font-size: 93px;
+        font-family: "Bebas Neue";
+        text-align: center;
+        justify-content: center;
+        transition: ease-in-out;
+        transition-duration: 0.3s;
+        transition-property: all;
+    }
+
+    div#contrastcheckbox>div#contrastcontents>div#contrastblack>span {
+        font-size: 40;
+        -webkit-text-stroke: 1px white;
+        text-stroke: 1px white;
+        display: block;
+        transition: ease-in-out;
+        transition-duration: 0.3s;
+        transition-property: all;
+    }
+
+    div#contrastcheckbox>span#contrastchecktitle {
+        padding: 10;
+        font-family: "Vegur";
+        text-align: center;
+        background-color: #F0F0F0;
+    }
+
+    div#contrastcheckbox>div#contrastcontents>span#contrastcheckdescription {
+        padding: 10;
+        font-family: "Vegur";
+        background-color: #F0F0F0;
+        display: block;
+        font-size: 10;
+    }
+
+    div#contrastcheckbox>div#contrastcontents>span#contrastcheckcolorinfo {
+        padding: 10;
+        font-family: "Vegur";
+        background-color: #F0F0F0;
+        display: block;
+        font-size: 10;
+    }
+
+    div#contrastcheckbox>div#contrastcontents>span#contrastcheckcolorinfo>span#contrastcheckcolorcode {
+        padding: 0;
+        font-family: "Vegur";
+        background-color: #F0F0F0;
+        -webkit-text-stroke: 0.4px black;
+        text-stroke: 0.4px black;
+    }
+
+    label.switch {
+        background-color: #F0F0F0;
+        margin: auto;
+        margin-bottom: 5px;
+    }
+
+    /* The switch - the box around the slider */
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+    }
+
+    /* Hide default HTML checkbox */
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    /* The slider */
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .3s;
+        transition: .3s;
+    }
+
+    .slider>#slidercircle {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .3s;
+        transition: .3s;
+    }
+
+    input:checked+.slider {
+        background-color: #6495ED;
+    }
+
+    input:focus+.slider {
+        box-shadow: 0 0 1px #6495ED;
+    }
+
+    input:checked+.slider>#slidercircle {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+    }
+
+    /* Rounded sliders */
+    .slider.round {
+        border-radius: 34px;
+    }
+
+    .slider.round>#slidercircle {
+        border-radius: 50%;
+    }
+
+    div#contrastoutlineswitch {
+        background-color: #F0F0F0;
+        margin: auto;
+        width: 100%;
+        padding-top: 5;
+        padding-bottom: 5;
+        justify-content: center;
+        display: flex;
+        align-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    span#outlineswitchtitle {
+        margin-bottom: 10;
+        margin-top: 5;
+        font-family: 'Vegur';
+        font-size: 28;
     }
 }
