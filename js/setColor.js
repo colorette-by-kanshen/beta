@@ -1,5 +1,5 @@
 function setColor() {
-  var input = document.getElementById("hex-input").value;
+  var input = document.getElementById("hex-input").value.toUpperCase();
   var url = new URL(window.location.href);
   url.searchParams.set("color", input);
   url.searchParams.delete("random");
