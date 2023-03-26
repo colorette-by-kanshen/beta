@@ -6,7 +6,7 @@ function changeTheme(color) {
   
     formField.style.backgroundColor = "#" + color;
     button.style.backgroundColor = "#" + color;
-  paths.forEach(path => {path.style.stroke = 'red';});
+    paths.forEach(path => {path.style.fill = "#" + color;});
     updateLogoColor(color);
 }
 
