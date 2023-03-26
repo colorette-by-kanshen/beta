@@ -1,11 +1,12 @@
 function changeTheme(color) {
     var formField = document.getElementById("hex-input");
     var button = document.querySelector("form");
-    var logo = document.getElementById("logo")
+    var logo = document.getElementById("logo").contentDocument;
+    var elements = logo.getElementsByClassName("logoShape");
   
     formField.style.backgroundColor = "#" + color;
     button.style.backgroundColor = "#" + color;
-    logo.style.fill = "#" + color;
+    for (var i = 0; i < elements.length; i++) elements[i].style.fill = color;
     updateLogoColor(color);
 }
 
