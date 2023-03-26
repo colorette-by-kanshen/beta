@@ -2,11 +2,11 @@ function changeTheme(color) {
     var formField = document.getElementById("hex-input");
     var button = document.querySelector("form");
     var logo = document.getElementById("logo").contentDocument;
-    var elements = logo.getElementsByClassName("logoShape");
+    const paths = logo.querySelectorAll('path');
   
     formField.style.backgroundColor = "#" + color;
     button.style.backgroundColor = "#" + color;
-    for (var i = 0; i < elements.length; i++) elements[i].style.fill = color;
+  paths.forEach(path => {path.style.stroke = 'red';});
     updateLogoColor(color);
 }
 
