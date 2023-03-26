@@ -1,7 +1,7 @@
 function changeTheme(color) {
     var formField = document.getElementById("hex-input");
     var button = document.querySelector("form");
-    var logo = document.getElementById("logo");
+    var logo = document.getElementById("logo").contentDocument;
     const paths = logo.querySelectorAll('path');
   
     formField.style.backgroundColor = "#" + color;
