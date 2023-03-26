@@ -6,87 +6,9 @@
     <link href="fonts/stylesheet.css" rel="stylesheet">
     <link rel="preload" href="img/logo-black.png" as="image">
     <link rel="preload" href="img/logo-white.png" as="image">
-    <style id="contrastcheckboxstyle"></style>
-    <style>
-        * {
-            -webkit-tap-highlight-color: transparent;
-            outline: none;
-        }
-    
-        html,
-        body {
-            height: 100%;
-        }
-    
-        body {
-            margin: 0;
-        }
-    
-        #_checkbox {
-            display: none;
-        }
-    
-        label#contrastswitch {
-            position: absolute;
-            top: 50%;
-            right: 0;
-            left: 0;
-            width: 32px;
-            height: 32px;
-            margin: 0 auto;
-            background-color: #6495ED;
-            transform: translateY(-50%);
-            border-radius: 50%;
-            box-shadow: 0 2.24px 3.2px #6495ED;
-            cursor: pointer;
-            transition: 0.2s ease transform, 0.2s ease background-color,
-                0.2s ease box-shadow;
-            overflow: hidden;
-            z-index: 1;
-        }
-    
-        label#contrastswitch:before {
-            content: "";
-            position: absolute;
-            top: 50%;
-            right: 0;
-            left: 0;
-            width: 22.4px;
-            height: 22.4px;
-            margin: 0 auto;
-            background-color: #ffffff;
-            transform: translateY(-50%);
-            border-radius: 50%;
-            box-shadow: inset 0 2.24px 3.2px #6495ED;
-            transition: 0.2s ease width, 0.2s ease height;
-        }
-    
-        label#contrastswitch:hover:before {
-            width: 17.6px;
-            height: 17.6px;
-            box-shadow: inset 0 2.24px 3.2px #6495ED;
-        }
-    
-        label#contrastswitch:active {
-            transform: translateY(-50%) scale(0.9);
-        }
-    
-        #_checkbox:checked+label#contrastswitch {
-            background-color: #6495ED;
-            box-shadow: 0 2.24px 3.2px #6495ED;
-        }
-    
-        #_checkbox:checked+label#contrastswitch:before {
-            width: 0;
-            height: 0;
-        }
-    
-        #_checkbox:checked {
-            transform: translate(0);
-            opacity: 1;
-        }
+    <style id="contrastcheckboxstyle">
     </style>
-        <header>
+    <header>
         <div id="logo-image">
             <img src="img/logo-white.png" id="logo">
         </div>
@@ -237,11 +159,7 @@
                 href="https://github.com/colorette-by-kanshen/colorette-by-kanshen.github.io/releases/tag/v1.2"
                 target="_blank" rel="noopener noreferrer">Version 1.2</a></strong>.</p>
     <div id="contrastcheckbox" class="contrastcheck contrastcheckwhite">
-        <div id="contrastheader">
-            <span id="contrastchecktitle" onclick="switchContrastContents()">Contrast Check</span>
-            <input type="checkbox" id="_checkbox">
-            <label id="contrastswitch" for="_checkbox"></label>
-        </div>
+        <span id="contrastchecktitle" onclick="switchContrastContents()">Contrast Check</span>
         <div id="contrastcontents">
         <div id="contrastwhite" class="contrastcheck"></div>
         <div id="contrastoutlineswitch" class="contrastcheck">

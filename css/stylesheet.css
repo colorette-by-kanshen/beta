@@ -338,7 +338,7 @@
         transition-property: all;
     }
 
-    div#contrastcheckbox>div#contrastheader>span#contrastchecktitle {
+    div#contrastcheckbox>span#contrastchecktitle {
         padding: 10;
         font-family: "Vegur";
         text-align: center;
