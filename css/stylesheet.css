@@ -8,7 +8,7 @@
         display: grid;
     }
 
-    img#logo {
+    svg#logo {
         aspect-ratio: auto;
         height: 65px;
         fill: black;
@@ -467,7 +467,7 @@
         display: grid;
     }
 
-    img#logo {
+    svg#logo {
         aspect-ratio: auto;
         width: 500px;
         fill: black;
