@@ -53,28 +53,12 @@ function updateFavicon(color) {
   // get the SVG code
   const svgCode = '<svg version="1.0" xmlns="http://www.w3.org/2000/svg" width = "500.000000pt" height = "500.000000pt" viewBox = "0 0 500.000000 500.000000" preserveAspectRatio = "xMidYMid meet" ><g transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)"fill="#' + color + '" stroke="none"><path d="M2265 4989 c-577 -56 -1113 -308 -1526 -719 -394 -391 -628 -859 -716 -1430 -21 -142 -24 -509 -5 -645 117 -816 552 -1466 1247 -1866 650 -373 1443 -431 2144 -157 195 76 427 206 596 333 88 66 247 205 252 220 2 6 -239 252 -536 549 l-538 538 -84 -66 c-126 -100 -282 -170 -437 -197 -95 -17 -331 -6 -412 19 -298 89 -523 286 -637 554 -60 143 -67 185 -67 378 0 193 7 235 68 379 111 264 349 472 631 553 70 20 102 23 255 23 153 0 185 -3 255 -23 117 -34 248 -102 343 -178 l84 -67 541 542 542 542 -70 65 c-518 478 -1232 720 -1930 653z"/></g></svg>';
 
-  // create a new image object
-  const img = new Image();
-
   // set the src attribute to the SVG code
-  img.src = 'data:image/svg+xml;base64,' + btoa(svgCode);
-
-  // create a canvas element
-  const canvas = document.createElement('canvas');
-
-  // set the width and height of the canvas to match the image
-  canvas.width = img.width;
-  canvas.height = img.height;
-
-  // get the canvas 2d context
-  const ctx = canvas.getContext('2d');
-
-  // draw the image onto the canvas
-  ctx.drawImage(img, 0, 0);
+  const faviconDataCode = 'data:image/svg+xml;base64,' + btoa(svgCode);
 
   // get the favicon link element
   const favicon = document.querySelector('link[rel="icon"]');
 
   // set the href attribute to the canvas data URL
-  favicon.href = canvas.toDataURL();
+  favicon.href = faviconDataCode;
 }
