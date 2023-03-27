@@ -21,6 +21,7 @@ function checkColor() {
     document.querySelector('title').textContent = "#" + color + " | colorétte +"
     getColorBrightness(color);
     checkContrast(color)
+    setMetaTags(color)
   };
   if (random === "true") {
     document.getElementById("randomcolorinfo").style.display = "block";
