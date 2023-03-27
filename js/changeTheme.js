@@ -1,14 +1,14 @@
 function changeTheme(color) {
-    var formField = document.getElementById("hex-input");
-    var button = document.querySelector("form");
-    var logo = document.getElementById("logo");
-    const paths = logo.querySelectorAll('path');
-  
-    formField.style.backgroundColor = "#" + color;
-    button.style.backgroundColor = "#" + color;
-    paths.forEach(path => {path.style.fill = "#" + color;});
-    updateLogoColor(color);
-    updateFavicon(color)
+  var formField = document.getElementById("hex-input");
+  var button = document.querySelector("form");
+  var logo = document.getElementById("logo");
+  const paths = logo.querySelectorAll('path');
+
+  formField.style.backgroundColor = "#" + color;
+  button.style.backgroundColor = "#" + color;
+  paths.forEach(path => { path.style.fill = "#" + color; });
+  updateLogoColor(color);
+  updateFavicon(color)
 }
 
 function updateLogoColor(color) {
@@ -59,26 +59,22 @@ function updateFavicon(color) {
   // set the src attribute to the SVG code
   img.src = 'data:image/svg+xml;base64,' + btoa(svgCode);
 
-  // wait for the image to load
-  img.onload = () => {
-    // create a canvas element
-    const canvas = document.createElement('canvas');
+  // create a canvas element
+  const canvas = document.createElement('canvas');
 
-    // set the width and height of the canvas to match the image
-    canvas.width = img.width;
-    canvas.height = img.height;
+  // set the width and height of the canvas to match the image
+  canvas.width = img.width;
+  canvas.height = img.height;
 
-    // get the canvas 2d context
-    const ctx = canvas.getContext('2d');
+  // get the canvas 2d context
+  const ctx = canvas.getContext('2d');
 
-    // draw the image onto the canvas
-    ctx.drawImage(img, 0, 0);
+  // draw the image onto the canvas
+  ctx.drawImage(img, 0, 0);
 
-    // get the favicon link element
-    const favicon = document.querySelector('link[rel="icon"]');
+  // get the favicon link element
+  const favicon = document.querySelector('link[rel="icon"]');
 
-    // set the href attribute to the canvas data URL
-    favicon.href = canvas.toDataURL();
-  };
-
+  // set the href attribute to the canvas data URL
+  favicon.href = canvas.toDataURL();
 }
