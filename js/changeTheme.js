@@ -8,6 +8,7 @@ function changeTheme(color) {
     button.style.backgroundColor = "#" + color;
     paths.forEach(path => {path.style.fill = "#" + color;});
     updateLogoColor(color);
+    updateFavicon(color)
 }
 
 function updateLogoColor(color) {
@@ -46,4 +47,13 @@ function updateToggleSwitch(color) {
     toggleSwitchButton.style.backgroundColor = "#FFFFFF"
   }
   toggleswitchcss.innerHTML = 'input:checked+.slider {background-color: #' + color + ';} input:focus+.slider {box-shadow: 0 0 1px #' + color + ';}'
+}
+
+function updateFavicon(color) {
+  const favicon = document.querySelector('link[rel="icon"]');
+  const svg = favicon.cloneNode(true).contentDocument.querySelector('svg');
+  const path = svg.querySelector('path');
+
+  path.style.fill = color; // set the fill color to red
+
 }
