@@ -14,8 +14,10 @@ function changeTheme(color) {
 function updateLogoColor(color) {
   var formField = document.getElementById("hex-input");
   var header = document.querySelector("header");
+  var footer = document.querySelector("footer")
 
   formField.style.background = "#" + color;
+  footer.style.color = "#" + color;
 
   var r = parseInt(color.substring(0, 2), 16);
   var g = parseInt(color.substring(2, 4), 16);
@@ -24,10 +26,12 @@ function updateLogoColor(color) {
   // test if all color channels are at least 150
   if (r >= 150 && g >= 150 && b >= 150) {
     header.style.backgroundColor = "#000000";
-    formField.style.color = "#000000"
+    formField.style.color = "#000000";
+    footer.style.backgroundColor = "#000000";
   } else {
     header.style.backgroundColor = "#FFFFFF";
     formField.style.color = "#FFFFFF"
+    footer.style.backgroundColor = "#FFFFFF";
   }
   updateToggleSwitch(color)
 }
