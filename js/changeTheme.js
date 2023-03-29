@@ -15,9 +15,10 @@ function updateLogoColor(color) {
   var formField = document.getElementById("hex-input");
   var header = document.querySelector("header");
   var footer = document.querySelector("footer")
+  var credits = document.querySelector("credits")
 
   formField.style.background = "#" + color;
-  footer.style.color = "#" + color;
+  credits.style.color = "#" + color;
 
   var r = parseInt(color.substring(0, 2), 16);
   var g = parseInt(color.substring(2, 4), 16);
@@ -28,10 +29,12 @@ function updateLogoColor(color) {
     header.style.backgroundColor = "#000000";
     formField.style.color = "#000000";
     footer.style.backgroundColor = "#000000";
+    credits.style.backgroundColor = "#000000";
   } else {
     header.style.backgroundColor = "#FFFFFF";
     formField.style.color = "#FFFFFF"
     footer.style.backgroundColor = "#FFFFFF";
+    credits.style.backgroundColor = "#FFFFFF";
   }
   updateToggleSwitch(color)
 }
