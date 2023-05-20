@@ -3,10 +3,12 @@ function changeTheme(color) {
   var form = document.querySelector("form");
   var logo = document.getElementById("logo");
   const paths = logo.querySelectorAll('path');
+  var themeMeta = document.querySelector('meta[name="theme-color"]');
 
   formField.style.backgroundColor = "#" + color;
   form.style.backgroundColor = "#" + color;
   paths.forEach(path => { path.style.fill = "#" + color; });
+  themeMeta.setAttribute('content', '#' + color);
   updateLogoColor(color);
   updateFavicon(color)
 }
