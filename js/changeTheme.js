@@ -4,11 +4,13 @@ function changeTheme(color) {
   var logo = document.getElementById("logo");
   const paths = logo.querySelectorAll('path');
   var themeMeta = document.querySelector('meta[name="theme-color"]');
+  var credits = document.querySelector("credits")
 
   formField.style.backgroundColor = "#" + color;
   form.style.backgroundColor = "#" + color;
   paths.forEach(path => { path.style.fill = "#" + color; });
   themeMeta.setAttribute('content', '#' + color);
+  credits.style.color = "#" + color;
   updateLogoColor(color);
   updateFavicon(color)
 }
@@ -18,9 +20,6 @@ function updateLogoColor(color) {
   var header = document.querySelector("header");
   var footer = document.querySelector("footer")
   var credits = document.querySelector("credits")
-
-  formField.style.background = "#" + color;
-  credits.style.color = "#" + color;
 
   var r = parseInt(color.substring(0, 2), 16);
   var g = parseInt(color.substring(2, 4), 16);
