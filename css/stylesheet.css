@@ -6,6 +6,7 @@
 
     div#logo-image {
         display: grid;
+        justify-content: center;+
     }
 
     svg#logo {
@@ -465,6 +466,7 @@
 
     div#logo-image {
         display: grid;
+        justify-content: center;
     }
 
     svg#logo {
