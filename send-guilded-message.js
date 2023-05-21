@@ -57,7 +57,7 @@ fetch('https://api.github.com/repos/colorette-by-kanshen/colorette-by-kanshen.gi
         }
       ]
     };
-  const webhookURL = process.env.GUILDED_WEBHOOK_URL;
+  const webhookURL = process.env.GUILDED_WEBHOOK;
   
   fetch(webhookURL, {
   method: 'POST',
