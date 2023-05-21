@@ -1,0 +1,28 @@
+name: Send Guilded Message Embed
+on:
+  release:
+    types: [created]
+
+jobs:
+  send-guilded-message-embed:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+
+      - name: Install dependencies
+        run: npm ci
+        
+      - name: Install axios
+        run: npm install axios
+
+      - name: Transform data and send Guilded message embed
+        env:
+          GUILDED_WEBHOOK: ${{ secrets.GUILDED_WEBHOOK }}
+        run: node send_guilded_message.js
