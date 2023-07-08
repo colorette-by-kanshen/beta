@@ -21,6 +21,9 @@ function updateLogoColor(color) {
   var footer = document.querySelector("footer")
   var credits = document.querySelector("credits")
 
+  formField.style.background = "#" + color;
+  logo.style.background = "#" + color;
+
   var r = parseInt(color.substring(0, 2), 16);
   var g = parseInt(color.substring(2, 4), 16);
   var b = parseInt(color.substring(4, 6), 16);
