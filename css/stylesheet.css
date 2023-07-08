@@ -6,12 +6,13 @@
 
     div#logo-image {
         display: grid;
+        justify-content: center;+
     }
 
-    img#logo {
+    svg#logo {
         aspect-ratio: auto;
         height: 65px;
-        background-color: black;
+        fill: black;
         display: flex;
         align-items: flex-start;
         justify-self: center;
@@ -465,12 +466,13 @@
 
     div#logo-image {
         display: grid;
+        justify-content: center;
     }
 
-    img#logo {
+    svg#logo {
         aspect-ratio: auto;
         width: 500px;
-        background-color: black;
+        fill: black;
         display: flex;
         align-items: flex-start;
         justify-self: center;
