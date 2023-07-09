@@ -938,3 +938,21 @@
         font-size: 28;
     }
 }
+
+button#colonamescheckbutton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 100px;
+    border-radius: 30px;
+    border: none;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: "Vegur";
+    cursor: pointer;
+    position: absolute;
+}
