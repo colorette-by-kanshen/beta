@@ -959,6 +959,7 @@ button#colonamescheckbutton {
 }
 
 button#colonamescheckbutton span {
+    white-space: break-spaces;
     display: none;
 }
 
