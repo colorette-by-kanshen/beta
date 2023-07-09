@@ -20,7 +20,7 @@ function checkColor() {
     document.getElementById('contrastcheckbox').style.display = "flex";
     document.querySelector('title').textContent = "#" + color + " | colorétte +"
     document.getElementById("colonamescheckbutton").style.display = "flex";
-    document.querySelector(':root').style.setProperty("--accentColor", "#" + color)
+    document.querySelector(':root').style.setProperty("--searchedColor", "#" + color)
     
     if (color.length === 6) {
     getColorBrightness(color);

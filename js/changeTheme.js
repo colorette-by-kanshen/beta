@@ -33,11 +33,13 @@ function updateLogoColor(color) {
     formField.style.color = "#000000";
     footer.style.backgroundColor = "#000000";
     credits.style.backgroundColor = "#000000";
+    document.querySelector(':root').style.setProperty("--accentColor", "black");
   } else {
     header.style.backgroundColor = "#FFFFFF";
     formField.style.color = "#FFFFFF"
     footer.style.backgroundColor = "#FFFFFF";
     credits.style.backgroundColor = "#FFFFFF";
+    document.querySelector(':root').style.setProperty("--accentColor", "black");
   }
   updateToggleSwitch(color)
 }
