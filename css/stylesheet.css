@@ -955,6 +955,7 @@ button#colonamescheckbutton {
     font-family: "Vegur";
     margin: 10 auto;
     fill: var(--accentColor);
+    background-color: #595959;
 }
 
 button#colonamescheckbutton span {
