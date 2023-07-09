@@ -19,14 +19,18 @@ function checkColor() {
     document.getElementById('maincolorpalletteholder').style.display = "flex";
     document.getElementById('contrastcheckbox').style.display = "flex";
     document.querySelector('title').textContent = "#" + color + " | colorétte +"
+    document.getElementById("colonamescheckbutton").style.display = "flex";
+    document.querySelector(':root').style.setProperty("--accentColor", "#" + color)
     
     if (color.length === 6) {
     getColorBrightness(color);
-    checkContrast(color)
+    checkContrast(color);
+    getColonamesLink(color);
     } else if (color.length === 3) {
-      var formattedcolor = `${color[0]}${color[0]}${color[1]}${color[1]}${color[2]}${color[2]}`;
+      const formattedcolor = `${color[0]}${color[0]}${color[1]}${color[1]}${color[2]}${color[2]}`;
       getColorBrightness(formattedcolor);
-      checkContrast(formattedcolor)
+      checkContrast(formattedcolor);
+      getColonamesLink(formattedcolor);
     }
   };
   if (random === "true") {

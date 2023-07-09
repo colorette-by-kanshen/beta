@@ -940,7 +940,7 @@
 }
 
 button#colonamescheckbutton {
-    display: flex;
+    display: none;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -948,12 +948,11 @@ button#colonamescheckbutton {
     height: 50px;
     border-radius: 30px;
     border: white 5px;
-    font-size: 14px;
+    font-size: 0px;
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
     font-family: "Vegur";
-    cursor: pointer;
     margin: 10 auto;
 }
 
@@ -971,3 +970,73 @@ button#colonamescheckbutton span.valid {
 html {
     overflow-x: hidden;
 }
+
+@keyframes buttonAnimationNotFound {
+    0% {
+      background-color: #595959;
+      fill: var(--accentColor);
+      font-size: 0;
+      border: 0px red solid;
+    }
+  
+    33% {
+      background-color: red;
+      fill: red;
+      font-size: 0;
+      border: 0px red solid;
+    }
+  
+    66% {
+      background-color: red;
+      fill: red;
+      font-size: 14px;
+      border: 3px red solid;
+    }
+  
+    100% {
+      background-color: var(--accentColor);
+      fill: red;
+      font-size: 14px;
+      border: 3px red solid;
+    }
+  }
+  
+  @keyframes buttonAnimationFound {
+    0% {
+      background-color: var(--accentColor);
+      fill: var(--accentColor);
+      font-size: 0;
+      border: 0px var(--searchedColor) solid;
+    }
+  
+    33% {
+      background-color: var(--searchedColor);
+      fill: var(--searchedColor);
+      font-size: 0;
+      border: 0px var(--searchedColor) solid;
+    }
+  
+    66% {
+      background-color: var(--searchedColor);
+      fill: var(--searchedColor);
+      font-size: 14px;
+      border: 3px var(--searchedColor) solid;
+      cursor: pointer;
+    }
+  
+    100% {
+      background-color: var(--accentColor);
+      fill: var(--searchedColor);
+      font-size: 14px;
+      border: 3px var(--searchedColor) solid;
+      cursor: pointer;
+    }
+  }
+
+  button#colonamescheckbutton.COLONAMESmatchnotfound {
+    animation: buttonAnimationNotFound 3s normal 1 forwards;
+  }
+
+  button#colonamescheckbutton.COLONAMESmatchfound {
+    animation: buttonAnimationFound 3s normal 1 forwards;
+  }
