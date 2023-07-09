@@ -967,3 +967,7 @@ button#colonamescheckbutton span.valid {
     width: 150px;
     transition: width 1s ease-in-out, border 1s ease-in-out;
 }
+
+html {
+    overflow-x: hidden;
+}
