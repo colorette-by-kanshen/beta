@@ -95,8 +95,7 @@
     <div id="color-selector">
         <form>
             <div id="input-container">
-                <input type="text" id="hex-input" name="color" pattern="[a-fA-F0-9]{6}" required maxlength="6"
-                    minlength="6" placeholder="0F0F0F">
+                <input type="text" id="hex-input" name="color" pattern="[a-fA-F0-9]{3}|[a-fA-F0-9]{6}" required maxlength="6" minlength="3" placeholder="0F0F0F">
             </div>
             <div id="button-container">
                 <input type="submit" value="GENERATE" onclick="formCheck()">

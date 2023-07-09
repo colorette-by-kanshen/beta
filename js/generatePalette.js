@@ -483,6 +483,14 @@ function compilePalette(color0, color1, color2, color3, color4, color5, color6, 
     setRGBPalette(color0, color1, color2, color3, color4, color5, color6, color7, color8, color9, color10)
 }
 
+function simplifyHEX(color) {
+    if (color[0] === color[1] && color[2] === color[3] && color[4] === color[5]) {
+        return "\n\n#" + color[0] + color[2] + color[4];
+    } else {
+        return
+    }
+}
+
 function setHEXPalette(c0, c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, defBrightness) {
     // Set Function Constants
     const paletteBox0 = document.getElementById("color0");
@@ -512,17 +520,17 @@ function setHEXPalette(c0, c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, defBrightnes
     paletteBox10.style.backgroundColor = "#" + c10;
 
     // Insert color codes into the elements
-    paletteBox0.querySelector(".hex").textContent = "#" + c0;
-    paletteBox1.querySelector(".hex").textContent = "#" + c1;
-    paletteBox2.querySelector(".hex").textContent = "#" + c2;
-    paletteBox3.querySelector(".hex").textContent = "#" + c3;
-    paletteBox4.querySelector(".hex").textContent = "#" + c4;
-    paletteBox5.querySelector(".hex").textContent = "#" + c5;
-    paletteBox6.querySelector(".hex").textContent = "#" + c6;
-    paletteBox7.querySelector(".hex").textContent = "#" + c7;
-    paletteBox8.querySelector(".hex").textContent = "#" + c8;
-    paletteBox9.querySelector(".hex").textContent = "#" + c9;
-    paletteBox10.querySelector(".hex").textContent = "#" + c10;
+    paletteBox0.querySelector(".hex").textContent = "#" + c0 + simplifyHEX(c0);
+    paletteBox1.querySelector(".hex").textContent = "#" + c1 + simplifyHEX(c1);
+    paletteBox2.querySelector(".hex").textContent = "#" + c2 + simplifyHEX(c2);
+    paletteBox3.querySelector(".hex").textContent = "#" + c3 + simplifyHEX(c3);
+    paletteBox4.querySelector(".hex").textContent = "#" + c4 + simplifyHEX(c4);
+    paletteBox5.querySelector(".hex").textContent = "#" + c5 + simplifyHEX(c5);
+    paletteBox6.querySelector(".hex").textContent = "#" + c6 + simplifyHEX(c6);
+    paletteBox7.querySelector(".hex").textContent = "#" + c7 + simplifyHEX(c7);
+    paletteBox8.querySelector(".hex").textContent = "#" + c8 + simplifyHEX(c8);
+    paletteBox9.querySelector(".hex").textContent = "#" + c9 + simplifyHEX(c9);
+    paletteBox10.querySelector(".hex").textContent = "#" + c10 + simplifyHEX(c10);
 
     // Add .default class to the default brightness
     defaultPaletteBox.classList.add('default');
