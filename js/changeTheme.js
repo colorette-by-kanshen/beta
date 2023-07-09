@@ -39,7 +39,7 @@ function updateLogoColor(color) {
     formField.style.color = "#FFFFFF"
     footer.style.backgroundColor = "#FFFFFF";
     credits.style.backgroundColor = "#FFFFFF";
-    document.querySelector(':root').style.setProperty("--accentColor", "black");
+    document.querySelector(':root').style.setProperty("--accentColor", "white");
   }
   updateToggleSwitch(color)
 }
