@@ -954,6 +954,7 @@ button#colonamescheckbutton {
     margin-bottom: 10px;
     font-family: "Vegur";
     margin: 10 auto;
+    fill: var(--accentColor);
 }
 
 button#colonamescheckbutton span {
@@ -1003,7 +1004,7 @@ html {
   
   @keyframes buttonAnimationFound {
     0% {
-      background-color: var(--accentColor);
+      background-color: #595959;
       fill: var(--accentColor);
       font-size: 0;
       border: 0px var(--searchedColor) solid;
