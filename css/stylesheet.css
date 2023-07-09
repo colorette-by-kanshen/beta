@@ -6,7 +6,7 @@
 
     div#logo-image {
         display: grid;
-        justify-content: center;+
+        justify-content: center;
     }
 
     svg#logo {
@@ -206,6 +206,12 @@
         height: fit-content;
         margin-top: 32.125;
         padding: 0 2.5px;
+    }
+
+    div.maincolorpallettebox>.hex.threedigitsupport {
+        margin-top: 21.5 !important;
+        white-space: pre-line;
+        text-align: center;
     }
 
     div.maincolorpallettebox>.rgb {
@@ -683,6 +689,12 @@
         line-height: 20px;
         flex-wrap: wrap;
         flex-direction: column;
+    }
+
+    div.maincolorpallettebox>.hex.threedigitsupport {
+        margin-top: 21.5 !important;
+        white-space: pre-line;
+        text-align: center;
     }
 
     div.maincolorpallettebox>.r,

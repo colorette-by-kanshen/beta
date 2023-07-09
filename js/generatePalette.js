@@ -532,6 +532,41 @@ function setHEXPalette(c0, c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, defBrightnes
     paletteBox9.querySelector(".hex").textContent = "#" + c9 + simplifyHEX(c9);
     paletteBox10.querySelector(".hex").textContent = "#" + c10 + simplifyHEX(c10);
 
+    if (simplifyHEX(c0) !== "") {
+        paletteBox0.querySelector(".hex").classList.add("threedigitsupport")
+    }
+    if (simplifyHEX(c1) !== "") {
+        paletteBox1.querySelector(".hex").classList.add("threedigitsupport")
+    }
+    if (simplifyHEX(c2) !== "") {
+        paletteBox2.querySelector(".hex").classList.add("threedigitsupport")
+    }
+    if (simplifyHEX(c3) !== "") {
+        paletteBox3.querySelector(".hex").classList.add("threedigitsupport")
+    }
+    if (simplifyHEX(c4) !== "") {
+        paletteBox4.querySelector(".hex").classList.add("threedigitsupport")
+    }
+    if (simplifyHEX(c5) !== "") {
+        paletteBox5.querySelector(".hex").classList.add("threedigitsupport")
+    }
+    if (simplifyHEX(c6) !== "") {
+        paletteBox6.querySelector(".hex").classList.add("threedigitsupport")
+    }
+    if (simplifyHEX(c7) !== "") {
+        paletteBox7.querySelector(".hex").classList.add("threedigitsupport")
+    }
+    if (simplifyHEX(c8) !== "") {
+        paletteBox8.querySelector(".hex").classList.add("threedigitsupport")
+    }
+    if (simplifyHEX(c9) !== "") {
+        paletteBox9.querySelector(".hex").classList.add("threedigitsupport")
+    }
+    if (simplifyHEX(c10) !== "") {
+        paletteBox10.querySelector(".hex").classList.add("threedigitsupport")
+    }
+
+
     // Add .default class to the default brightness
     defaultPaletteBox.classList.add('default');
 
