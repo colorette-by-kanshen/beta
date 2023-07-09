@@ -959,12 +959,11 @@ button#colonamescheckbutton {
 }
 
 button#colonamescheckbutton span {
-    overflow: hidden;
-    transition: width 1s ease-in-out, border 1s ease-in-out;
+    display: none;
 }
 
 button#colonamescheckbutton span.valid {
-    transition: width 1s ease-in-out, border 1s ease-in-out;
+    display: inline;
 }
 
 html {
