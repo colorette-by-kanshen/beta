@@ -944,15 +944,26 @@ button#colonamescheckbutton {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 90%;
-    height: 100px;
+    width: 80%;
+    height: 50px;
     border-radius: 30px;
-    border: none;
+    border: white 5px;
     font-size: 14px;
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
     font-family: "Vegur";
     cursor: pointer;
-    position: absolute;
+    margin: 10 auto;
+}
+
+button#colonamescheckbutton span {
+    width: 0px;
+    overflow: hidden;
+    transition: width 1s ease-in-out, border 1s ease-in-out;
+}
+
+button#colonamescheckbutton span.valid {
+    width: 150px;
+    transition: width 1s ease-in-out, border 1s ease-in-out;
 }
