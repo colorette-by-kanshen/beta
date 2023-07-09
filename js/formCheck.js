@@ -7,7 +7,7 @@ function formCheck() {
   }
 
   // Check if input is exactly 6 or 3 hexadecimal characters
-  if (!/^[0-9a-fA-F]{6}$/.test(hex) || !/^[0-9a-fA-F]{3}$/.test(hex)) {
+  if (!/^[0-9a-fA-F]{6}$/.test(hex) && !/^[0-9a-fA-F]{3}$/.test(hex)) {
     alert("Please enter a valid 6-digit / 3-digit hexadecimal color code");
     return;
   }
