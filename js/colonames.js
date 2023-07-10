@@ -1,20 +1,18 @@
-function getColonamesLink(color) {
-    const button = document.getElementById("colonamescheckbutton");
-    const nocolor = document.getElementById("unavailableoncolonames")
-    const yescolor = document.getElementById("availableoncolonames")
+function getColonamesLink(searchedColor) {
 
-    fetch('https://colonames.by.kanshen.click/' + color)
-  .then(response => {
-      if (response.status === 404) {
-          button.classList.add("COLONAMESmatchnotfound");
-          nocolor.classList.add("valid");
+    fetch('js/colors.json')
+    .then(response => response.json())
+    .then(data => {
+      const colorNames = Object.keys(data); // Get all color names
+      const matches = colorNames.filter(color => data[color] === searchedColor); // Find matches
+
+      if (matches.length > 0) {
+        const matchesString = matches.join(' • ');
+        console.log('Matching color names:', matchesString);
       } else {
-          button.classList.add("COLONAMESmatchfound");
-          yescolor.classList.add("valid");
-    }
-  })
-  .catch(error => {
-    console.log('An error occurred while accessing the website.');
-  });
+        console.log('No matching color names found.');
+      }
+    })
+    .catch(error => console.error('Error:', error));
 
 }
