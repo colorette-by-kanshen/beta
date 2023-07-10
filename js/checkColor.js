@@ -20,6 +20,7 @@ function checkColor() {
     document.querySelector('title').textContent = "#" + color + " | colorétte +"
     document.getElementById("colonamescheckbutton").style.display = "flex";
     document.querySelector(':root').style.setProperty("--searchedColor", "#" + color)
+    document.getElementById("colonamescheckbutton").style.display = "flex";
     
     if (color.length === 6) {
     changeTheme(color);
