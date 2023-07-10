@@ -955,6 +955,7 @@ button#colonamescheckbutton {
     fill: var(--accentColor);
     color: var(--accentColor);
     background-color: #595959;
+    overflow: hidden;
 }
 
 button#colonamescheckbutton:not([enabled]) {
