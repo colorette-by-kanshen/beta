@@ -40,14 +40,14 @@
         color: #F0F0F0;
     }
 
-    a:link:not(a>button),
-    a:visited:not(a>button),
-    a:active:not(a>button) {
+    a:link:not(a>button, a>button span),
+    a:visited:not(a>button, a>button span),
+    a:active:not(a>button, a>button span) {
         color: white;
         text-decoration: none;
     }
 
-    a:hover:not(a>button) {
+    a:hover:not(a>button, a>button span) {
         text-decoration: underline;
     }
 
