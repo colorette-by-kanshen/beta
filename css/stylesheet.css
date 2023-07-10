@@ -960,6 +960,7 @@ button#colonamescheckbutton {
 button#colonamescheckbutton:not([enabled]) {
     height: 0;
     transition: height 1s ease-in-out;
+    display: none;
 }
 
 button#colonamescheckbutton [enabled] {
