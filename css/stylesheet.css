@@ -958,15 +958,15 @@ button#colonamescheckbutton {
     overflow: hidden;
 }
 
-button#colonamescheckbutton:not([enabled]) {
-    height: 0;
-    transition: height 1s ease-in-out;
-    display: none;
+button#colonamescheckbutton[disabled] {
+    height: 75px;
+    transition: opacity 1s ease-in-out;
+    opacity: 50%;
 }
 
-button#colonamescheckbutton [enabled] {
+button#colonamescheckbutton:not([disabled]) {
     height: 75px;
-    transition: height 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
 }
 
 button#colonamescheckbutton span#colorsmatchlistCOLONAMES {
