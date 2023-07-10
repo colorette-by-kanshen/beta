@@ -4,7 +4,6 @@ function checkColor() {
   const random = urlParams.get('random');
   if (color) {
     document.getElementById('hex-input').value = color;
-    changeTheme(color);
     document.getElementById('color0').style.display = "flex";
     document.getElementById('color1').style.display = "flex";
     document.getElementById('color2').style.display = "flex";
@@ -23,11 +22,14 @@ function checkColor() {
     document.querySelector(':root').style.setProperty("--searchedColor", "#" + color)
     
     if (color.length === 6) {
+    changeTheme(color);
     getColorBrightness(color);
     checkContrast(color);
     getColonamesLink(color);
+    
     } else if (color.length === 3) {
       const formattedcolor = `${color[0]}${color[0]}${color[1]}${color[1]}${color[2]}${color[2]}`;
+      changeTheme(formattedcolor);
       getColorBrightness(formattedcolor);
       checkContrast(formattedcolor);
       getColonamesLink(formattedcolor);
