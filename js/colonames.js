@@ -4,7 +4,7 @@ function getColonamesLink(searchedColor) {
     .then(response => response.json())
     .then(data => {
       const colorNames = Object.keys(data); // Get all color names
-      const matches = colorNames.filter(color => data[color] === searchedColor); // Find matches
+      const matches = colorNames.filter(color => data[color] === "#" + searchedColor); // Find matches
 
       if (matches.length > 0) {
         const matchesString = matches.join(' • ');
