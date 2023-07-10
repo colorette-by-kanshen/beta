@@ -1,7 +1,6 @@
 function getColonamesLink(searchedColor) {
   const button = document.getElementById("colonamescheckbutton");
   const buttontext = document.getElementById("colorsmatchlistCOLONAMES");
-  const buttonlink = document.getElementById("colonamesbuttonlink")
 
     fetch('js/colors.json')
     .then(response => response.json())
@@ -13,7 +12,7 @@ function getColonamesLink(searchedColor) {
         const matchesString = matches.join(' • ');
         button.removeAttribute("disabled");
         buttontext.textContent = matchesString;
-        buttonlink.setAttribute("href", "https://colonames.by.kanshen.click/" + searchedColor)
+        button.setAttribute("onclick", "location.href='https://colonames.by.kanshen.click/" + searchedColor + "'")
       } else {
       }
     })
