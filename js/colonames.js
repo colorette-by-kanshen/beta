@@ -1,4 +1,6 @@
 function getColonamesLink(searchedColor) {
+  const button = document.getElementById("colonamescheckbutton");
+  const buttontext = document.getElementById("colorsmatchlistCOLONAMES")
 
     fetch('js/colors.json')
     .then(response => response.json())
@@ -8,9 +10,9 @@ function getColonamesLink(searchedColor) {
 
       if (matches.length > 0) {
         const matchesString = matches.join(' • ');
-        console.log('Matching color names:', matchesString);
+        button.removeAttribute("disabled");
+        buttontext.textContent = matchesString;
       } else {
-        console.log('No matching color names found.');
       }
     })
     .catch(error => console.error('Error:', error));
