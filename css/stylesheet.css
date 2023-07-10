@@ -962,6 +962,7 @@ button#colonamescheckbutton[disabled] {
     height: 75px;
     transition: opacity 1s ease-in-out;
     opacity: 50%;
+    cursor: not-allowed;
 }
 
 button#colonamescheckbutton:not([disabled]) {

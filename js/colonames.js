@@ -10,10 +10,13 @@ function getColonamesLink(searchedColor) {
 
       if (matches.length > 0) {
         const matchesString = matches.join(' • ');
+        const matchesStringAlt = matches.join(' or ');
         button.removeAttribute("disabled");
         buttontext.textContent = matchesString;
-        button.setAttribute("onclick", "location.href='https://colonames.by.kanshen.click/" + searchedColor + "'")
+        button.setAttribute("onclick", "location.href='https://colonames.by.kanshen.click/" + searchedColor + "'");
+        button.setAttribute("title", searchedColor + "is also known as " + matchesStringAlt + ".");
       } else {
+        button.setAttribute("title", searchedColor + "has no valid color name.");
       }
     })
     .catch(error => console.error('Error:', error));
