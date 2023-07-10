@@ -954,7 +954,7 @@ button#colonamescheckbutton {
     margin: 10 auto;
     fill: var(--accentColor);
     color: var(--accentColor);
-    background-color: #595959;
+    background-color: var(--searchedColor);
     overflow: hidden;
 }
 
