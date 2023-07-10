@@ -40,14 +40,14 @@
         color: #F0F0F0;
     }
 
-    a:link,
-    a:visited,
-    a:active {
+    a:link:not(a>button),
+    a:visited:not(a>button),
+    a:active:not(a>button) {
         color: white;
         text-decoration: none;
     }
 
-    a:hover {
+    a:hover:not(a>button) {
         text-decoration: underline;
     }
 
@@ -967,6 +967,7 @@ button#colonamescheckbutton[disabled] {
 button#colonamescheckbutton:not([disabled]) {
     height: 75px;
     transition: opacity 1s ease-in-out;
+    cursor: pointer;
 }
 
 button#colonamescheckbutton span#colorsmatchlistCOLONAMES {
