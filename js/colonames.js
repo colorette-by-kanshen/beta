@@ -14,9 +14,9 @@ function getColonamesLink(searchedColor) {
         button.removeAttribute("disabled");
         buttontext.textContent = matchesString;
         button.setAttribute("onclick", "location.href='https://colonames.by.kanshen.click/" + searchedColor + "'");
-        button.setAttribute("title", searchedColor + "is also known as " + matchesStringAlt + ".");
+        button.setAttribute("title", "#" + searchedColor + " is also known as " + matchesStringAlt + ".");
       } else {
-        button.setAttribute("title", searchedColor + "has no valid color name.");
+        button.setAttribute("title", "#" + searchedColor + " has no valid color name.");
       }
     })
     .catch(error => console.error('Error:', error));
